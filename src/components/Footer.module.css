@@ -1,0 +1,25 @@
+:root {
+  --headerHeight: 4rem;
+  --footerHeight: 100px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: var(--footerHeight);
+  margin-top: calc(100vh - var(--footerHeight) - var(--headerHeight));
+}
+.icons {
+  width: 14rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.icons > * > * {
+  width: 2.2rem;
+  height: 1.8rem;
+  color: black;
+}
