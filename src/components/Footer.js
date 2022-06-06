@@ -17,7 +17,7 @@ const Footer = () => {
           <BsFacebook />
         </Link>
       </div>
-      <h3>hello from footer</h3>
+      <h3>Copyright © 2022 Mirian Tsintsadze. All rights reserved.</h3>
     </footer>
   );
 };

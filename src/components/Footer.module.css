@@ -1,15 +1,18 @@
 :root {
   --headerHeight: 4rem;
-  --footerHeight: 100px;
+  --footerHeight: 130px;
 }
 
 .footer {
+  background-color: rgb(235, 232, 232);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   height: var(--footerHeight);
   margin-top: calc(100vh - var(--footerHeight) - var(--headerHeight));
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .icons {
   width: 14rem;
@@ -17,9 +20,30 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background-color: inherit;
 }
 .icons > * > * {
   width: 2.2rem;
   height: 1.8rem;
-  color: black;
+  color: rgb(67, 69, 71);
+  border-radius: 8px;
+  align-items: center;
+  background-color: inherit;
+}
+.icons > * {
+  background-color: inherit;
+}
+.icons > * > *:hover {
+  color: rgb(45, 46, 48);
+  margin: 0;
+  padding: 0;
+}
+.footer > h3 {
+  /* padding: 12px 30px; */
+  color: rgb(67, 69, 71);
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  background-color: inherit;
+  padding-top: 1.2rem;
 }
