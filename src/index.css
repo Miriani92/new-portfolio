@@ -9,3 +9,8 @@
   box-sizing: border-box;
   background-color: #f6f6f6;
 }
+
+.routes {
+  margin: 0 auto;
+  width: clamp(250px, 60vw, 1000px);
+}
