@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   width: clamp(200px, 60vw, 800px);
   height: 300px;
   margin: 0 auto;
@@ -6,7 +7,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 3rem;
+  margin-top: 5rem;
   gap: 1rem;
 }
 .address {
@@ -14,8 +15,81 @@
   align-items: center;
   gap: 0.5rem;
 }
+p,
+h1 {
+  z-index: 2;
+}
 
 .hero > p {
   max-width: 400px;
   text-align: center;
+}
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: rgba(80, 87, 82, 0.479);
+  border-radius: 5px;
+  z-index: 1;
+}
+.one {
+  top: 0;
+  left: 320px;
+  transform: rotate(26deg);
+}
+.two {
+  left: 100px;
+  width: 35px;
+  height: 35px;
+  transform: rotate(13deg);
+}
+.three {
+  right: 100px;
+  background-color: rgba(156, 156, 136, 0.383);
+  transform: rotate(39deg);
+}
+.four {
+  bottom: 0;
+  transform: rotate(54deg);
+  background-color: rgba(150, 150, 140, 0.301);
+}
+.five {
+  bottom: 250px;
+  left: 150px;
+  width: 20px;
+  height: 20px;
+  transform: rotate(67deg);
+  background-color: rgba(92, 92, 81, 0.397);
+}
+.six {
+  bottom: 120px;
+  right: 250px;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  background-color: rgba(143, 143, 131, 0.445);
+  transform: rotate(13deg);
+}
+.seven {
+  bottom: 150px;
+  left: 250px;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  background-color: rgba(75, 75, 72, 0.301);
+  transform: rotate(80deg);
+}
+.eight {
+  bottom: 250px;
+  right: 250px;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
 }
