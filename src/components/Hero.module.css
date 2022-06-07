@@ -15,6 +15,7 @@
   align-items: center;
   gap: 0.5rem;
 }
+
 p,
 h1 {
   z-index: 2;
@@ -46,18 +47,16 @@ h1 {
 }
 .two {
   left: 100px;
+  bottom: 120px;
   width: 35px;
   height: 35px;
-  transform: rotate(13deg);
 }
 .three {
   right: 100px;
   background-color: rgba(156, 156, 136, 0.383);
-  transform: rotate(39deg);
 }
 .four {
   bottom: 0;
-  transform: rotate(54deg);
   background-color: rgba(150, 150, 140, 0.301);
 }
 .five {
@@ -65,7 +64,6 @@ h1 {
   left: 150px;
   width: 20px;
   height: 20px;
-  transform: rotate(67deg);
   background-color: rgba(92, 92, 81, 0.397);
 }
 .six {
@@ -92,4 +90,7 @@ h1 {
   width: 12px;
   height: 12px;
   border-radius: 3px;
+}
+.divWrapper > * {
+  transition: 0.1s linear;
 }
