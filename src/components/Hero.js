@@ -5,17 +5,20 @@ import { FiMapPin } from "react-icons/fi";
 const Hero = () => {
   const divRef = useRef(null);
   useEffect(() => {
+    const allDivs = divRef.current.childNodes;
+    let rotateValue = 1;
     const moveDivs = (e) => {
-      const allDivs = divRef.current.childNodes;
-      let rotateValue = 13;
       const x = (e.pageX * 3) / 100;
       const y = (e.pageY * 3) / 100;
       allDivs.forEach((element) => {
         element.style.transform = `translateX(${x}px) translateY(${y}px) rotate(${rotateValue}deg) `;
-        rotateValue += 13;
+        rotateValue += 1;
       });
     };
     document.addEventListener("mousemove", moveDivs);
+    return () => {
+      document.removeEventListener("mousemove", moveDivs);
+    };
   }, []);
   return (
     <main className={styles.hero}>

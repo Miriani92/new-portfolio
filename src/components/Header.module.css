@@ -11,8 +11,9 @@
 .imageWrapper > p {
   text-transform: capitalize;
   letter-spacing: 0.05rem;
-  font-family: "roboto";
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgba(19, 19, 19, 0.74);
 }
 .header {
   margin: 0 auto;
@@ -26,15 +27,15 @@
 .navlink {
   margin-right: 1rem;
   text-decoration: none;
-  letter-spacing: 0.1rem;
-  font-size: clamp(0.8rem, 4vw, 1.25rem);
+  font-size: clamp(0.8rem, 5vw, 1.2rem);
   padding: clamp(0.6rem, 2vw, 0.8rem);
-  color: black;
+  color: rgba(19, 19, 19, 0.74);
   transition: 0.3s ease;
+  font-weight: 700;
 }
 
 .navlink:hover {
-  background-color: rgb(126, 139, 151);
+  background-color: rgb(164, 176, 187);
   border-radius: 0.5rem;
   color: white;
 }

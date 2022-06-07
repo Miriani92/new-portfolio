@@ -20,6 +20,21 @@ p,
 h1 {
   z-index: 2;
 }
+h1 {
+  font-weight: bold;
+  background-image: linear-gradient(141deg, rgb(164, 164, 175), rgb(30 30 34));
+  position: relative;
+  background-image: linear-gradient(
+    rgb(178, 178, 187) 141deg,
+    rgb(167, 167, 173),
+    rgb(70, 70, 78)
+  );
+  font-size: 50px;
+  letter-spacing: -1.25px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: rgb(0 0 0 / 0%);
+}
 
 .hero > p {
   max-width: 400px;
@@ -91,6 +106,7 @@ h1 {
   height: 12px;
   border-radius: 3px;
 }
+
 .divWrapper > * {
-  transition: 0.1s linear;
+  transition: 0.2s linear;
 }

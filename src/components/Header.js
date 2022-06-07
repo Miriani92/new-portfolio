@@ -21,7 +21,7 @@ const Header = () => {
             <NavLink
               style={({ isActive }) => {
                 return {
-                  backgroundColor: isActive ? "rgb(126, 139, 151)" : "",
+                  backgroundColor: isActive ? "rgb(164, 176, 187)" : "",
                   color: isActive ? "white" : "",
                   borderRadius: "0.5rem",
                 };
