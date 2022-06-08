@@ -7,15 +7,27 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.icons}>
-        <Link to="https://github.com/Miriani92">
+        <a
+          href="https://github.com/Miriani92"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <BsGithub />
-        </Link>
-        <Link to="https://www.linkedin.com/in/mirian-tsintsadze-277676227/">
+        </a>
+        <a
+          href="https://www.linkedin.com/in/mirian-tsintsadze-277676227/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <BsLinkedin />
-        </Link>
-        <Link to="https://www.facebook.com/mirian.cincadze.9">
+        </a>
+        <a
+          href="https://www.facebook.com/mirian.cincadze.9"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <BsFacebook />
-        </Link>
+        </a>
       </div>
       <h3>Copyright © 2022 Mirian Tsintsadze. All rights reserved.</h3>
     </footer>

@@ -29,12 +29,13 @@
   border-radius: 8px;
   align-items: center;
   background-color: inherit;
+  transition: all 0.2s linear;
 }
 .icons > * {
   background-color: inherit;
 }
 .icons > * > *:hover {
-  color: rgb(45, 46, 48);
+  color: rgb(5, 5, 5);
   margin: 0;
   padding: 0;
 }
