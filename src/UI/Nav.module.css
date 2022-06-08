@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   cursor: pointer;
   background-color: rgb(196, 200, 204);
@@ -11,39 +11,39 @@
   transition: all 0.5s linear;
 }
 
-.button > div {
+.button .hamburger {
   position: relative;
-  width: 30px;
-  height: 5px;
+  width: 25px;
+  height: 3px;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 3px;
   transition: all 0.5s linear;
 }
-.button > div::before,
-.button > div::after {
+.button .hamburger::before,
+.button .hamburger::after {
   content: "";
   position: absolute;
-  width: 30px;
-  height: 5px;
+  width: 20px;
+  height: 3px;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 3px;
   transition: all 0.3s linear;
 }
 
-.button > div::before {
+.button .hamburger::before {
   transform: translateY(-10px);
 }
-.button > div::after {
+.button .hamburger::after {
   transform: translateY(10px);
 }
 
-.button.clicked > div {
+.button.clicked .hamburger {
   transform: translateX(-50px);
   background: transparent;
 }
-.button.clicked > div::before {
-  transform: rotate(45deg) translate(35px, -35px);
+.button.clicked .hamburger::before {
+  transform: rotate(45deg) translate(37px, -37px);
 }
-.button.clicked > div::after {
-  transform: rotate(-45deg) translate(35px, 35px);
+.button.clicked .hamburger::after {
+  transform: rotate(-45deg) translate(37px, 37px);
 }

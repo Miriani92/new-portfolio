@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Nav.module.css";
+import { BsPerson } from "react-icons/bs";
 
 const Nav = () => {
   const [button, setButton] = useState(false);
@@ -9,6 +10,7 @@ const Nav = () => {
       role="button"
       onClick={() => setButton(!button)}
     >
+      <div className={styles.hamburger}></div>
       <div></div>
     </div>
   );

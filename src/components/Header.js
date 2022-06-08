@@ -5,7 +5,7 @@ import myImage from "../assets/myimage.jfif";
 
 const navLinks = [
   { name: "Home", path: "/" },
-  { name: "Projects", path: "/projects" },
+  { name: "About", path: "/About" },
   { name: "Contact", path: "/contact" },
 ];
 const Header = () => {
