@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import { BsLinkedin, BsGithub, BsFacebook } from "react-icons/bs";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
