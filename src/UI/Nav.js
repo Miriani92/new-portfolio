@@ -19,24 +19,31 @@ const Nav = ({ links }) => {
       >
         <div className={styles.hamburger}></div>
       </div>
-      <div className={styles.sidemenu}>
+      <div
+        className={
+          !button ? styles.sidemenu : `${styles.sidemenu} ${styles.show}`
+        }
+      >
         <div>
           <span>
             <AiOutlineHome />
           </span>
           {/* <NavLink to={home.path}> {home.name} </NavLink> */}
+          <p>miro</p>
         </div>
         <div>
           <span>
             <BsPerson />
           </span>
           {/* <NavLink to={person.path}>{person.name}</NavLink> */}
+          <p>miro</p>
         </div>
         <div>
           <span>
             <AiOutlineMail />
           </span>
           {/* <NavLink to={contact.path}>{contact.name}</NavLink> */}
+          <p>miro</p>
         </div>
       </div>
     </nav>

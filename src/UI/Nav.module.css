@@ -49,3 +49,54 @@
 .button.clicked .hamburger::after {
   transform: rotate(-45deg) translate(37px, 37px);
 }
+.sidemenu {
+  position: relative;
+  margin-left: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(88, 93, 88, 0.431);
+  gap: 5px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(50%);
+}
+
+span {
+  position: relative;
+  display: inline-block;
+}
+
+span > * {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sidemenu > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 120px;
+  height: 36px;
+  transition: all 0.2s ease-in;
+}
+.sidemenu > div > * {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.sidemenu > div:hover {
+  border-radius: 5px;
+  background-color: rgba(49, 47, 47, 0.561);
+  cursor: pointer;
+}
+.sidemenu.show {
+  opacity: 1;
+  transform: translateX(0);
+}
