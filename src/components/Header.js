@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Header.module.css";
 import { NavLink } from "react-router-dom";
 import myImage from "../assets/myimage.jfif";
@@ -9,9 +9,26 @@ const navLinks = [
   { name: "Contact", path: "/contact" },
 ];
 const Header = () => {
+  useEffect(() => {
+    const onScroll = () => {
+      const header = document.querySelector("#header");
+      const imgCon = document.querySelector("#imageWrapper");
+      const scrollValue = window.scrollY;
+      if (scrollValue > 70) {
+        header.classList.add(styles.scroll);
+      } else {
+        header.classList.remove(styles.scroll);
+      }
+    };
+
+    document.addEventListener("scroll", onScroll);
+    return () => {
+      document.removeEventListener("scroll", onScroll);
+    };
+  }, []);
   return (
-    <header className={styles.header}>
-      <div className={styles.imageWrapper}>
+    <header className={styles.header} id="header">
+      <div className={styles.imageWrapper} id="imageWrapper">
         <img src={myImage} />
         <p>mirian tsintsadze</p>
       </div>
