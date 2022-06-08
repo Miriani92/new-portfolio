@@ -1,18 +1,45 @@
 import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import styles from "./Nav.module.css";
 import { BsPerson } from "react-icons/bs";
+import { AiOutlineHome, AiOutlineMail } from "react-icons/ai";
 
-const Nav = () => {
+const Nav = ({ links }) => {
   const [button, setButton] = useState(false);
+  // const [home, person, contact] = links;
+
   return (
-    <div
-      className={!button ? styles.button : `${styles.button} ${styles.clicked}`}
-      role="button"
-      onClick={() => setButton(!button)}
-    >
-      <div className={styles.hamburger}></div>
-      <div></div>
-    </div>
+    <nav className={styles.nav}>
+      <div
+        className={
+          !button ? styles.button : `${styles.button} ${styles.clicked}`
+        }
+        role="button"
+        onClick={() => setButton(!button)}
+      >
+        <div className={styles.hamburger}></div>
+      </div>
+      <div className={styles.sidemenu}>
+        <div>
+          <span>
+            <AiOutlineHome />
+          </span>
+          {/* <NavLink to={home.path}> {home.name} </NavLink> */}
+        </div>
+        <div>
+          <span>
+            <BsPerson />
+          </span>
+          {/* <NavLink to={person.path}>{person.name}</NavLink> */}
+        </div>
+        <div>
+          <span>
+            <AiOutlineMail />
+          </span>
+          {/* <NavLink to={contact.path}>{contact.name}</NavLink> */}
+        </div>
+      </div>
+    </nav>
   );
 };
 
