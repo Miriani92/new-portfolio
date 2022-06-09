@@ -29,21 +29,21 @@ const Nav = ({ links }) => {
             <AiOutlineHome />
           </span>
           {/* <NavLink to={home.path}> {home.name} </NavLink> */}
-          <p>miro</p>
+          <p>Home</p>
         </div>
         <div>
           <span>
             <BsPerson />
           </span>
           {/* <NavLink to={person.path}>{person.name}</NavLink> */}
-          <p>miro</p>
+          <p>About</p>
         </div>
         <div>
           <span>
             <AiOutlineMail />
           </span>
           {/* <NavLink to={contact.path}>{contact.name}</NavLink> */}
-          <p>miro</p>
+          <p>Contact</p>
         </div>
       </div>
     </nav>

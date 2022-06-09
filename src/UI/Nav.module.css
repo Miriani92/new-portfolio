@@ -1,6 +1,6 @@
 .nav {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   flex-direction: column;
   justify-content: flex-start;
   position: fixed;
@@ -61,20 +61,12 @@
   transform: rotate(-45deg) translate(37px, 37px);
 }
 .sidemenu {
-  position: relative;
-  margin-left: 5px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 150px;
-  height: 150px;
+  width: 0px;
+  height: 0px;
   background-color: rgba(88, 93, 88, 0.431);
   opacity: 0;
   gap: 5px;
-  transition: all 0.5s ease-in-out;
-  transform: translateX(50%);
+  transition: all 0.2s linear;
 }
 
 span {
@@ -90,15 +82,15 @@ span > * {
 .sidemenu > div {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 30px;
+  justify-content: flex-start;
+  gap: 35px;
   width: 120px;
-  height: 36px;
+  height: 38px;
   transition: all 0.2s ease-in;
 }
 .sidemenu > div > * {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 500;
 }
 
@@ -106,8 +98,19 @@ span > * {
   border-radius: 5px;
   background-color: rgba(49, 47, 47, 0.561);
   cursor: pointer;
+  width: 70%;
+  padding: 5px;
 }
 .sidemenu.show {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin-left: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   opacity: 1;
-  transform: translateX(0);
+  transform: scale(1);
 }
