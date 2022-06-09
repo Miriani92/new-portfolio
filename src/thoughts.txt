@@ -1,4 +1,11 @@
-// we can outsource the heplers functions in the diffrent foldr utils or helpers 
+// so we have the flickering when we are approaching the treshold 
+// i think it is not the scroll size fault 
+// let me do the inner widht 
+
+
+
+
+
 
 
 

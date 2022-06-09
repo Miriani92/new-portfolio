@@ -4,7 +4,8 @@ export const useScroll = () => {
   const [scroll, setScroll] = useState(false);
   const onScroll = () => {
     const scrollValue = window.scrollY;
-    if (scrollValue > 100) {
+    console.log(scrollValue);
+    if (scrollValue >= 100) {
       setScroll(true);
     } else {
       setScroll(false);
