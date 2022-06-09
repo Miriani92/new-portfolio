@@ -1,8 +1,3 @@
-// so we have the flickering when we are approaching the treshold 
-// i think it is not the scroll size fault 
-// let me do the inner widht 
-
-
 
 
 
