@@ -1,0 +1,63 @@
+.expertise {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  width: 100%;
+}
+.expertise > h2 {
+  color: rgba(2, 1, 1, 0.815);
+}
+
+.skillswrapper {
+  width: 70%;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 50px);
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  grid-template-areas:
+    ". . j . ."
+    ". c h n ."
+    "f g r m k";
+}
+.javascript {
+  grid-area: j;
+  color: rgba(161, 161, 70, 0.9);
+}
+
+.css {
+  grid-area: c;
+  color: rgba(70, 105, 161, 0.9);
+}
+.html {
+  grid-area: h;
+  color: rgba(180, 72, 57, 0.9);
+}
+.node {
+  grid-area: n;
+  color: rgba(91, 161, 70, 0.9);
+}
+.figma {
+  grid-area: f;
+  color: rgba(151, 72, 151, 0.9);
+}
+.graph {
+  grid-area: g;
+  color: rgba(212, 22, 22, 0.9);
+}
+.react {
+  grid-area: r;
+  color: rgba(46, 170, 46, 0.9);
+}
+.mongodb {
+  grid-area: m;
+}
+.material {
+  grid-area: k;
+  color: rgba(14, 14, 226, 0.9);
+}

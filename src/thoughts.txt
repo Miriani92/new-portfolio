@@ -1,5 +1,10 @@
+<----- TO DO ----->
 
-
+routes--->
+    <Expertise/>--->for display my expertise with icons
+    <Projects/> --->displays the projects i did this will return the <ProjectCard/>
+    for the porjcet data(object of links and pictures for projects we pass as a props)
+        <ProjectCard/> --->dispalys individual projects
 
 
 

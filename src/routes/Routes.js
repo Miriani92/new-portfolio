@@ -1,12 +1,11 @@
 import React from "react";
-import Hero from "../components/Hero";
 import { Routes, Route } from "react-router-dom";
-
+import Page from "../page/Page";
 const Router = () => {
   return (
     <div className="routes">
       <Routes>
-        <Route path="/" exact element={<Hero />} />
+        <Route path="/" exact element={<Page />} />
       </Routes>
     </div>
   );
