@@ -3,10 +3,11 @@ import { Link, NavLink } from "react-router-dom";
 import styles from "./Nav.module.css";
 import { BsPerson } from "react-icons/bs";
 import { AiOutlineHome, AiOutlineMail } from "react-icons/ai";
+import { navLinks } from "../data/Links";
 
-const Nav = ({ links }) => {
+const Nav = () => {
   const [button, setButton] = useState(false);
-  // const [home, person, contact] = links;
+  const [home, person, contact] = navLinks;
 
   return (
     <nav className={styles.nav}>
@@ -28,22 +29,19 @@ const Nav = ({ links }) => {
           <span>
             <AiOutlineHome />
           </span>
-          {/* <NavLink to={home.path}> {home.name} </NavLink> */}
-          <p>Home</p>
+          <Link to={home.path}> {home.name} </Link>
         </div>
         <div>
           <span>
             <BsPerson />
           </span>
-          {/* <NavLink to={person.path}>{person.name}</NavLink> */}
-          <p>About</p>
+          <Link to={person.path}>{person.name}</Link>
         </div>
         <div>
           <span>
             <AiOutlineMail />
           </span>
-          {/* <NavLink to={contact.path}>{contact.name}</NavLink> */}
-          <p>Contact</p>
+          <Link to={contact.path}>{contact.name}</Link>
         </div>
       </div>
     </nav>

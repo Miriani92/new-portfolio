@@ -1,13 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./Header.module.css";
 import { NavLink } from "react-router-dom";
+import { navLinks } from "../data/Links";
 import myImage from "../assets/myimage.jfif";
 
-const navLinks = [
-  { name: "Home", path: "/" },
-  { name: "About", path: "/About" },
-  { name: "Contact", path: "/contact" },
-];
 const Header = () => {
   return (
     <header className={styles.header} id="header">

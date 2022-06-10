@@ -24,6 +24,7 @@
   height: 7rem;
   width: clamp(250px, 60vw, 1000px);
   transition: all 0.2s linear;
+  padding-bottom: 8rem;
 }
 .navlink {
   margin-right: 1rem;
