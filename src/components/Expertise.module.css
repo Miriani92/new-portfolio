@@ -1,19 +1,38 @@
 .expertise {
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-top: 5rem;
-  width: 60%;
-  border-radius: 10px;
+  width: 100%;
+  height: 800px;
+  background: no-repeat center url("../assets/devices/mc-pro.png");
+  background-size: 80%;
 }
+
 .expertise > h2 {
-  color: rgba(2, 1, 1, 0.815);
+  text-align: center;
+  background-image: linear-gradient(
+    to right top,
+    #6d5161,
+    #6c4f67,
+    #684e6f,
+    #604f78,
+    #535081,
+    #45588b,
+    #305f93,
+    #006798,
+    #00749b,
+    #007f99,
+    #008a94,
+    #0f948b
+  );
+  color: transparent;
+  background-clip: text;
 }
 
 .skillswrapper {
-  width: 70%;
+  width: 60%;
   margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -49,7 +68,7 @@
 }
 .graph {
   grid-area: g;
-  color: rgba(212, 22, 22, 0.9);
+  color: rgba(221, 19, 19, 0.89);
 }
 .react {
   grid-area: r;
