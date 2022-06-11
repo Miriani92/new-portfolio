@@ -19,7 +19,7 @@ const Expertise = () => {
           <RiCss3Fill style={{ fontSize: 50 }} />
         </div>
         <div className={styles.html}>
-          <FaHtml5 style={{ fontSize: 50 }} />
+          <DiMongodb style={{ fontSize: 50 }} />
         </div>
         <div className={styles.node}>
           <FaNodeJs style={{ fontSize: 50 }} />
@@ -37,7 +37,7 @@ const Expertise = () => {
           <SiMaterialui style={{ fontSize: 50 }} />
         </div>
         <div className={styles.mongodb}>
-          <DiMongodb style={{ fontSize: 50 }} />
+          <FaHtml5 style={{ fontSize: 50 }} />
         </div>
       </div>
     </article>
