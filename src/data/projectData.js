@@ -7,7 +7,7 @@ import trainerphone from "../assets/projects_images/typetrainer_results.jpg";
 export const projects = [
   {
     name: "Beautyline",
-    decscription:
+    description:
       "this is startup page it displays new technologies in beaty business I am working on the startup with my friend   used React and Figma for design. ",
     image1: beauty,
     image2: beautyphone,

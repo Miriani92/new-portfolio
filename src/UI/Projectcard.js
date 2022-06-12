@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./Projectcard.module.css";
 
-const Projectcard = ({ name, image1, image2 }) => {
+const Projectcard = ({ name, image1, image2, description }) => {
   return (
-    <div>
-      <div>
+    <div className={styles.card}>
+      <div className={styles.discription}>
         <h3>{name}</h3>
-        <p>discription</p>
+        <p>{description}</p>
       </div>
-      <div>
+      <div className={styles.images}>
         <img src={image1} />
         <img src={image2} />
       </div>
@@ -17,4 +17,3 @@ const Projectcard = ({ name, image1, image2 }) => {
 };
 
 export default Projectcard;
-
