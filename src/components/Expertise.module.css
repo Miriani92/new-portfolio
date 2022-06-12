@@ -30,21 +30,6 @@
 
 .expertise > h2 {
   text-align: center;
-  /* background-image: linear-gradient(
-    to right top,
-    #6d5161,
-    #6c4f67,
-    #684e6f,
-    #604f78,
-    #535081,
-    #45588b,
-    #305f93,
-    #006798,
-    #00749b,
-    #007f99,
-    #008a94,
-    #0f948b
-  ); */
   color: rgb(39, 37, 37);
   background-clip: text;
   z-index: 2;
