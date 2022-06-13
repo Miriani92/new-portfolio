@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Projectcard.module.css";
+import { FaArrowRight } from "react-icons/fa";
 
 const Projectcard = ({ name, image1, image2, description }) => {
   return (
@@ -8,6 +9,10 @@ const Projectcard = ({ name, image1, image2, description }) => {
         <div className={styles.discription}>
           <h3>{name}</h3>
           <p>{description}</p>
+          <button>
+            See more
+            <FaArrowRight />
+          </button>
         </div>
         <div className={styles.images}>
           <div>
