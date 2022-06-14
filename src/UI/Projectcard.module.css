@@ -1,15 +1,20 @@
 .cardwrapper {
   margin-bottom: 2rem;
-  width: 65vw;
+  width: 120%;
 }
 .card {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: rgba(206, 49, 49, 0.774);
-  height: 500px;
-  border-radius: 10px;
+  justify-content: space-around;
+  background-image: linear-gradient(
+    to right,
+    rgba(161, 153, 153, 0.808) 50%,
+    rgb(98, 98, 199) 50%
+  );
+  height: 700px;
+  overflow: hidden;
+  border-radius: 20px;
   padding: 0 2rem 0 2rem;
 }
 .discription {
@@ -53,6 +58,7 @@
   width: 200px;
   height: 300px;
   object-fit: contain;
+  border-radius: 20px;
 }
 
 .images > div:nth-child(1)::before {

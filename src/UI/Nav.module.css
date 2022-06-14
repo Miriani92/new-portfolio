@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: flex-start;
   position: fixed;
-  right: 20%;
+  right: 10%;
   top: 50px;
   z-index: 5;
   transition: all 0.2s linear;
@@ -18,7 +18,7 @@
   height: 50px;
   border-radius: 50%;
   cursor: pointer;
-  background-color: rgb(196, 200, 204);
+  background-color: rgb(80, 108, 167);
   border: transparent;
   transition: all 0.2s linear;
   z-index: 5;
@@ -63,7 +63,7 @@
 .sidemenu {
   width: 0px;
   height: 0px;
-  background-color: rgba(88, 93, 88, 0.431);
+  background-color: rgb(80, 108, 167);
   opacity: 0;
   gap: 5px;
   transition: all 0.2s linear;
