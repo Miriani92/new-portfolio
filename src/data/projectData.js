@@ -3,6 +3,7 @@ import beautyphone from "../assets/projects_images/beautyline_phone.jpg";
 import countries from "../assets/projects_images/countries.jpg";
 import trainer from "../assets/projects_images/typetrainer.jpg";
 import trainerphone from "../assets/projects_images/typetrainer_results.jpg";
+import countryphone from "../assets/projects_images/countries_phone.jpg";
 
 export const projects = [
   {
@@ -17,7 +18,7 @@ export const projects = [
     description:
       " used Countries API, project has light and dark mode, users can search country by region, name",
     image1: countries,
-    image2: countries,
+    image2: countryphone,
   },
   {
     name: "Typetrainer",
