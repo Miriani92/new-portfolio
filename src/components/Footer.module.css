@@ -10,7 +10,6 @@
   justify-content: center;
   flex-direction: column;
   height: var(--footerHeight);
-  margin-top: calc(100vh - var(--footerHeight) - var(--headerHeight));
   padding-top: 2rem;
   padding-bottom: 2rem;
 }

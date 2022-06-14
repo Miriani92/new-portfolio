@@ -4,3 +4,12 @@
   justify-content: center;
   flex-direction: column;
 }
+.title {
+  padding-bottom: 2rem;
+  background-image: linear-gradient(333deg, rgb(50 50 53) 73%, rgb(94 94 99));
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  background-clip: text;
+  color: transparent;
+}
