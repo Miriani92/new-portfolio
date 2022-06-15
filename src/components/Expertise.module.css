@@ -20,9 +20,9 @@
   top: 50%;
   left: 50%;
   background-image: linear-gradient(
-    to right top,
-    rgba(38, 156, 38, 0.815),
-    rgba(187, 21, 21, 0.726)
+    to top,
+    rgba(21, 134, 187, 0.726),
+    rgba(165, 142, 142, 0)
   );
   background-clip: content-box;
   border-radius: 10px 10px 0 0;
