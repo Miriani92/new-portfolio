@@ -8,7 +8,9 @@ const Header = () => {
   return (
     <header className={styles.header} id="header">
       <div className={styles.imageWrapper} id="imageWrapper">
-        <img src={myImage} />
+        <div>
+          <img src={myImage} />
+        </div>
         <p>mirian tsintsadze</p>
       </div>
       <div>
