@@ -1,9 +1,11 @@
 .projects {
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-bottom: 10rem;
+  width: 70%;
 }
 .title {
   padding-bottom: 2rem;

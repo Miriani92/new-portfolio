@@ -13,7 +13,7 @@ const Header = () => {
         </div>
         <p>mirian tsintsadze</p>
       </div>
-      <div>
+      <div className={styles.linkswrapper}>
         {navLinks.map((link, ind) => {
           return (
             <Link

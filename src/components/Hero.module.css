@@ -103,3 +103,14 @@ h1 {
 .divWrapper > * {
   transition: 0.2s linear;
 }
+
+@media screen and (max-width: 500px) {
+  .three,
+  .two {
+    display: none;
+  }
+  .one {
+    top: 20px;
+    left: 50%;
+  }
+}

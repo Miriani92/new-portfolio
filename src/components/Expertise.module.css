@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 800px;
+  max-width: 800px;
   height: 800px;
   background: no-repeat center url("../assets/devices/mc-pro.png");
   background-size: 80%;

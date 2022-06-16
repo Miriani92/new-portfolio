@@ -120,3 +120,9 @@ span > * {
 .sidemenu > div > *.active {
   color: rgb(78, 67, 67);
 }
+@media screen and (max-width: 500px) {
+  .nav {
+    position: fixed;
+    right: 20%;
+  }
+}

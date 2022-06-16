@@ -13,11 +13,6 @@ body {
   scroll-behavior: smooth;
 }
 
-/* .routes {
-  margin: 0 auto;
-  width: clamp(250px, 60vw, 1000px);
-} */
-
 .App {
   background-color: #f6f3f3;
 }
