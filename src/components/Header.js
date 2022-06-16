@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Header.module.css";
 import { Link } from "react-scroll";
 import { navLinks } from "../data/Links";
 import myImage from "../assets/myimage.jfif";
 
 const Header = () => {
-  const [active, setActive] = useState(0);
   return (
     <header className={styles.header} id="header">
       <div className={styles.imageWrapper} id="imageWrapper">
@@ -25,11 +24,10 @@ const Header = () => {
               to={link.path}
               key={ind}
               className={
-                active === ind
-                  ? `${styles.navlink} ${styles.active} `
+                ind === 0
+                  ? `${styles.navlink} ${styles.active}`
                   : styles.navlink
               }
-              onClick={() => setActive(ind)}
             >
               {link.name}
             </Link>

@@ -7,4 +7,7 @@ TODO
 --------------------------------------------------------------------------------------
 
 !!!!!!width of the projects might be change in th futre witdht more than 1370px
+
+
+active on the click scroll
 in the phone mode somthing couse the overlay in head and in the expertise 

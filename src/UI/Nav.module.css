@@ -116,3 +116,7 @@ span > * {
   transform: scale(1);
   box-shadow: -10px 10px 20px rgba(5, 5, 5, 0.9);
 }
+
+.sidemenu > div > *.active {
+  color: rgb(78, 67, 67);
+}

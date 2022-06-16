@@ -45,6 +45,7 @@ const Nav = () => {
             <BsPerson />
           </span>
           <Link
+            activeClass={styles.active}
             to={about.path}
             spy={true}
             smooth={true}
@@ -59,6 +60,7 @@ const Nav = () => {
             <MdOutlineWorkOutline />
           </span>
           <Link
+            activeClass={styles.active}
             to={projects.path}
             spy={true}
             smooth={true}
@@ -73,6 +75,7 @@ const Nav = () => {
             <AiOutlineMail />
           </span>
           <Link
+            activeClass={styles.active}
             to={contact.path}
             spy={true}
             smooth={true}
