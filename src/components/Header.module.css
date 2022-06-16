@@ -50,9 +50,15 @@
   color: rgba(19, 19, 19, 0.74);
   transition: 0.3s ease;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .navlink:hover {
+  background-color: rgb(164, 176, 187);
+  border-radius: 0.5rem;
+  color: white;
+}
+.active {
   background-color: rgb(164, 176, 187);
   border-radius: 0.5rem;
   color: white;

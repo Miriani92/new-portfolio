@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: flex-start;
   position: fixed;
-  right: 10%;
+  right: 5%;
   top: 50px;
   z-index: 5;
   transition: all 0.2s linear;

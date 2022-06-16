@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Header.module.css";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import { navLinks } from "../data/Links";
 import myImage from "../assets/myimage.jfif";
 
 const Header = () => {
+  const [active, setActive] = useState(0);
   return (
     <header className={styles.header} id="header">
       <div className={styles.imageWrapper} id="imageWrapper">
@@ -16,20 +17,22 @@ const Header = () => {
       <div>
         {navLinks.map((link, ind) => {
           return (
-            <NavLink
-              style={({ isActive }) => {
-                return {
-                  backgroundColor: isActive ? "rgb(164, 176, 187)" : "",
-                  color: isActive ? "white" : "",
-                  borderRadius: "0.5rem",
-                };
-              }}
+            <Link
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={700}
               to={link.path}
               key={ind}
-              className={styles.navlink}
+              className={
+                active === ind
+                  ? `${styles.navlink} ${styles.active} `
+                  : styles.navlink
+              }
+              onClick={() => setActive(ind)}
             >
               {link.name}
-            </NavLink>
+            </Link>
           );
         })}
       </div>

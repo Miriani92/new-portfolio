@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Routes from "./routes/Routes";
+import Hero from "./components/Hero";
+import Expertise from "./components/Expertise";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import Nav from "./UI/Nav";
 
 function App() {
@@ -21,10 +24,13 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App" id="Home">
       <Header />
       {show && <Nav />}
-      <Routes></Routes>
+      <Hero />
+      <Expertise />
+      <Projects />
+      <Contact />
       <Footer />
     </div>
   );

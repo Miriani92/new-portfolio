@@ -1,0 +1,11 @@
+TODO
+  TASK--->smooth scrolling and routing 
+  TASK---> mobile responsive
+  Task---> contact form senting method
+
+
+--------------------------------------------------------------------------------------
+
+!!!!!!width of the projects might be change in th futre
+active class on the links 
+in the phone mode somthing couse the overlay in head and in the expertise 
