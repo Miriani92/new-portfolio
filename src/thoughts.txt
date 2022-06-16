@@ -6,6 +6,5 @@ TODO
 
 --------------------------------------------------------------------------------------
 
-!!!!!!width of the projects might be change in th futre
-active class on the links 
+!!!!!!width of the projects might be change in th futre witdht more than 1370px
 in the phone mode somthing couse the overlay in head and in the expertise 
