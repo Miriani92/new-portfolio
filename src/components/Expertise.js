@@ -13,31 +13,31 @@ const Expertise = () => {
       <h2>My Expertise</h2>
       <div className={styles.skillswrapper}>
         <div className={styles.javascript}>
-          <IoLogoJavascript style={{ fontSize: 50 }} />
+          <IoLogoJavascript />
         </div>
         <div className={styles.css}>
-          <RiCss3Fill style={{ fontSize: 50 }} />
+          <RiCss3Fill />
         </div>
         <div className={styles.html}>
-          <DiMongodb style={{ fontSize: 50 }} />
+          <DiMongodb />
         </div>
         <div className={styles.node}>
-          <FaNodeJs style={{ fontSize: 50 }} />
+          <FaNodeJs />
         </div>
         <div className={styles.figma}>
-          <FaFigma style={{ fontSize: 50 }} />
+          <FaFigma />
         </div>
         <div className={styles.graph}>
-          <GrGraphQl style={{ fontSize: 50 }} />
+          <GrGraphQl />
         </div>
         <div className={styles.react}>
-          <FaReact style={{ fontSize: 50 }} />
+          <FaReact />
         </div>
         <div className={styles.material}>
-          <SiMaterialui style={{ fontSize: 50 }} />
+          <SiMaterialui />
         </div>
         <div className={styles.mongodb}>
-          <FaHtml5 style={{ fontSize: 50 }} />
+          <FaHtml5 />
         </div>
       </div>
     </article>

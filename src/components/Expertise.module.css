@@ -55,36 +55,109 @@
   grid-area: j;
   color: rgb(243, 243, 13);
 }
+.javascript > * {
+  font-size: 50px;
+}
 
 .css {
   grid-area: c;
   color: rgb(0, 98, 255);
 }
+.css > * {
+  font-size: 50px;
+}
 .html {
   grid-area: h;
   color: rgba(17, 17, 17, 0.863);
+}
+.html > * {
+  font-size: 50px;
 }
 .node {
   grid-area: n;
   color: rgb(65, 253, 8);
 }
+
+.node > * {
+  font-size: 50px;
+}
+
 .figma {
   grid-area: f;
   color: rgb(175, 2, 255);
+}
+.figma > * {
+  font-size: 50px;
 }
 .graph {
   grid-area: g;
   color: rgb(236, 14, 14);
 }
+.graph > * {
+  font-size: 50px;
+}
 .react {
   grid-area: r;
   color: rgb(15, 230, 219);
+}
+.react > * {
+  font-size: 50px;
 }
 .mongodb {
   grid-area: m;
   color: rgb(207, 212, 212);
 }
+.mongodb > * {
+  font-size: 50px;
+}
 .material {
   grid-area: k;
   color: rgb(25, 25, 236);
+}
+.material > * {
+  font-size: 50px;
+}
+@media screen and (max-width: 500px) {
+  .javascript > * {
+    font-size: 25px;
+  }
+  .css > * {
+    font-size: 25px;
+  }
+  .html > * {
+    font-size: 25px;
+  }
+  .node > * {
+    font-size: 25px;
+  }
+  .figma > * {
+    font-size: 25px;
+  }
+  .graph > * {
+    font-size: 25px;
+  }
+  .react > * {
+    font-size: 25px;
+  }
+  .mongodb > * {
+    font-size: 25px;
+  }
+  .material > * {
+    font-size: 25px;
+  }
+  .expertise > h2 {
+    font-size: 22px;
+    line-height: 12px;
+    padding-bottom: 10px;
+  }
+  .skillswrapper {
+    grid-template-rows: repeat(3, 25px);
+    margin-top: 5px;
+  }
+  .expertise::before {
+    height: 160px;
+  }
+  .expertise {
+    height: 400px;
+  }
 }
