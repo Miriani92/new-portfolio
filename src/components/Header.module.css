@@ -36,10 +36,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem;
+  padding-top: 4rem;
   height: 7rem;
   width: 70%;
-  width: clamp(250px, 60vw, 1000px);
   transition: all 0.2s linear;
   padding-bottom: 8rem;
 }
@@ -89,5 +88,9 @@
     margin: 0 auto;
     width: 85px;
     height: 85px;
+  }
+  .imageWrapper {
+    margin: 0 auto;
+    margin-left: calc(85px - 10px);
   }
 }
