@@ -46,9 +46,9 @@
   text-align: center;
   gap: 10px;
   grid-template-areas:
-    ". . j . ."
+    ". . r . ."
     ". c h n ."
-    "f g r m k";
+    "f g j m k";
   z-index: 2;
 }
 .javascript {
@@ -75,7 +75,7 @@
 }
 .node {
   grid-area: n;
-  color: rgb(65, 253, 8);
+  color: rgb(145, 255, 2);
 }
 
 .node > * {
@@ -98,7 +98,7 @@
 }
 .react {
   grid-area: r;
-  color: rgb(15, 230, 219);
+  color: rgb(3, 194, 184);
 }
 .react > * {
   font-size: 50px;

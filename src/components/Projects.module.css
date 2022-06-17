@@ -16,3 +16,13 @@
   background-clip: text;
   color: transparent;
 }
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 22px;
+    color: rgb(34, 33, 33);
+  }
+
+  .projects {
+    width: 90%;
+  }
+}

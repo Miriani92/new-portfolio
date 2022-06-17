@@ -12,8 +12,8 @@ const Expertise = () => {
     <article className={styles.expertise}>
       <h2>My Expertise</h2>
       <div className={styles.skillswrapper}>
-        <div className={styles.javascript}>
-          <IoLogoJavascript />
+        <div className={styles.react}>
+          <FaReact />
         </div>
         <div className={styles.css}>
           <RiCss3Fill />
@@ -30,9 +30,10 @@ const Expertise = () => {
         <div className={styles.graph}>
           <GrGraphQl />
         </div>
-        <div className={styles.react}>
-          <FaReact />
+        <div className={styles.javascript}>
+          <IoLogoJavascript />
         </div>
+
         <div className={styles.material}>
           <SiMaterialui />
         </div>
