@@ -47,3 +47,8 @@
   background-color: inherit;
   padding-top: 1.2rem;
 }
+@media screen and (max-width: 500px) {
+  .footer {
+    margin-top: 5rem;
+  }
+}

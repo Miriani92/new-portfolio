@@ -141,4 +141,43 @@
     width: 125px;
     height: 240px;
   }
+  .card {
+    position: relative;
+    justify-content: space-evenly;
+    height: 600px;
+  }
+  .discription {
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    gap: 20px;
+  }
+  .card > div:nth-child(2) {
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+  }
+  .discription > button {
+    display: relative;
+    width: 100px;
+    height: 2rem;
+    border: 1px solid black;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(24, 23, 23);
+  }
+  .discription > button > * {
+    display: absolute;
+    bottom: 50%;
+    transform: translateY(15%);
+    margin-left: 0.7rem;
+  }
+  .discription > button:hover {
+    background-color: rgb(80, 108, 167);
+    color: white;
+    transition: all 0.2s linear;
+  }
+  .card {
+    padding-bottom: 0;
+  }
 }

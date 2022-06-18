@@ -81,3 +81,18 @@ textarea {
   word-wrap: break-word;
   margin-top: 1rem;
 }
+@media screen and (max-width: 500px) {
+  .formwrapper > h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  textarea {
+    height: 120px;
+  }
+  .formwrapper > button {
+    font-size: 15px;
+    height: 30px;
+    width: 40%;
+    border-radius: 7px;
+  }
+} ;
