@@ -109,11 +109,8 @@
   transition: all 0.2s linear;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .card {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     background-image: linear-gradient(
       rgba(72, 136, 12, 0.76) 50%,
       rgb(98, 98, 199) 50%
@@ -166,17 +163,111 @@
     font-weight: 600;
     color: rgb(24, 23, 23);
   }
-  .discription > button > * {
-    display: absolute;
-    bottom: 50%;
-    transform: translateY(15%);
-    margin-left: 0.7rem;
+
+  .card {
+    padding-bottom: 0;
   }
-  .discription > button:hover {
-    background-color: rgb(80, 108, 167);
-    color: white;
-    transition: all 0.2s linear;
+}
+
+@media screen and (min-width: 270px) and (max-width: 400px) {
+  .images > div {
+    position: absolute;
+    width: 200px;
+    height: 100px;
   }
+  .images > div:nth-child(1) > img {
+    width: 200px;
+    height: 100px;
+  }
+  .images > div:nth-child(2) {
+    width: 70px;
+    height: 160px;
+    left: 30px;
+  }
+  .images > div:nth-child(2) img {
+    width: 70px;
+    height: 160px;
+  }
+  .card {
+    height: 500px;
+  }
+  .discription {
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    gap: 10px;
+    width: 200px;
+  }
+
+  .discription > button {
+    display: relative;
+    width: 100px;
+    height: 2rem;
+    border: 1px solid black;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(24, 23, 23);
+  }
+
+  .card {
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 1365px) {
+  .card {
+    background-image: linear-gradient(
+      rgba(72, 136, 12, 0.76) 50%,
+      rgb(98, 98, 199) 50%
+    );
+  }
+  .images {
+    position: relative;
+  }
+
+  .images > div {
+    position: absolute;
+    width: 350px;
+    height: 175px;
+  }
+  .images > div:nth-child(1) > img {
+    width: 340px;
+    height: 175px;
+  }
+  .images > div:nth-child(2) {
+    width: 150px;
+    height: 300px;
+    left: 25px;
+  }
+  .images > div:nth-child(2) img {
+    width: 150px;
+    height: 290px;
+  }
+  .card {
+    position: relative;
+    justify-content: space-evenly;
+    height: 700px;
+  }
+  .discription {
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    gap: 20px;
+  }
+  .card > div:nth-child(2) {
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+  }
+  .discription > button {
+    display: relative;
+    width: 130px;
+    height: 2rem;
+    border: 1px solid black;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(24, 23, 23);
+  }
+
   .card {
     padding-bottom: 0;
   }

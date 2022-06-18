@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 70%;
+  width: min(700px, 70%);
   height: 600px;
 }
 

@@ -133,8 +133,12 @@ h1 {
     color: transparent;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 340px) {
   h1 {
-    font-size: 38px;
+    font-size: 30px;
+  }
+  .seven {
+    left: 50%;
+    right: 50%;
   }
 } ;
