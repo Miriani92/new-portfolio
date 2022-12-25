@@ -67,7 +67,7 @@
   font-size: 50px;
 }
 .html {
-  grid-area: h;
+  grid-area: f;
   color: rgba(17, 17, 17, 0.863);
 }
 .html > * {
@@ -82,11 +82,11 @@
   font-size: 50px;
 }
 
-.figma {
-  grid-area: f;
-  color: rgb(175, 2, 255);
+.angular {
+  grid-area: h;
+  color: rgb(222, 15, 15);
 }
-.figma > * {
+.angular > * {
   font-size: 50px;
 }
 .graph {
@@ -130,7 +130,7 @@
   .node > * {
     font-size: 25px;
   }
-  .figma > * {
+  .angular > * {
     font-size: 25px;
   }
   .graph > * {
@@ -184,7 +184,7 @@
   .node > * {
     font-size: 30px;
   }
-  .figma > * {
+  .angular > * {
     font-size: 30px;
   }
   .graph > * {
@@ -224,7 +224,7 @@
   .node > * {
     font-size: 35px;
   }
-  .figma > * {
+  .angular > * {
     font-size: 35px;
   }
   .graph > * {

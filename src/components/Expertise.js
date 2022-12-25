@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Expertise.module.css";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiCss3Fill } from "react-icons/ri";
-import { FaHtml5, FaNodeJs, FaFigma, FaReact } from "react-icons/fa";
+import { FaHtml5, FaNodeJs, FaFigma, FaReact, FaAngular } from "react-icons/fa";
 import { GrGraphQl } from "react-icons/gr";
 import { SiMaterialui } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
@@ -18,14 +18,14 @@ const Expertise = () => {
         <div className={styles.css}>
           <RiCss3Fill />
         </div>
-        <div className={styles.html}>
-          <DiMongodb />
+        <div className={styles.angular}>
+          <FaAngular />
         </div>
         <div className={styles.node}>
           <FaNodeJs />
         </div>
-        <div className={styles.figma}>
-          <FaFigma />
+        <div className={styles.html}>
+          <DiMongodb />
         </div>
         <div className={styles.graph}>
           <GrGraphQl />

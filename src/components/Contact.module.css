@@ -35,8 +35,11 @@
   padding-top: 5px;
 }
 
+.formwrapper > div:has(input:focus) {
+  outline: 2px solid rgb(144, 132, 132);
+}
 .formwrapper > div:focus {
-  outline: 2px solid black;
+  outline: 2px solid rgb(144, 132, 132);
 }
 .formwrapper > div > label {
   align-self: flex-start;

@@ -10,15 +10,15 @@ const Contact = () => {
           <label>Name</label>
           <input placeholder="What should I call you" required></input>
         </div>
-        <div>
+        <div tabIndex="0">
           <label>Subject</label>
           <input placeholder="Subject of Your interest" required></input>
         </div>
-        <div>
+        <div tabIndex="0">
           <label>Email Address</label>
           <input placeholder="Where should I respond?" required></input>
         </div>
-        <div>
+        <div tabIndex="0">
           <label>Message</label>
           <textarea placeholder="Haw can I help you"></textarea>
         </div>
@@ -29,3 +29,6 @@ const Contact = () => {
 };
 
 export default Contact;
+// we got the differnt input
+
+// when we press
