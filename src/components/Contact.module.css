@@ -17,7 +17,6 @@
 }
 .formwrapper > div > input {
   all: unset;
-  background-color: white;
   height: 2.5rem;
   width: inherit;
 }
@@ -27,12 +26,12 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  background-color: white;
   margin-bottom: 1rem;
   border-radius: 12px;
   padding-bottom: 1rem;
   padding-left: 1rem;
   padding-top: 5px;
+  background-color: rgb(162, 163, 157, 0.5);
 }
 
 .formwrapper > div:has(input:focus) {
@@ -98,4 +97,8 @@ textarea {
     width: 40%;
     border-radius: 7px;
   }
-} ;
+}
+
+.formHeader {
+  margin: 0 auto;
+}

@@ -5,8 +5,8 @@ const Contact = () => {
   return (
     <form className={styles.form} id="Contact">
       <div className={styles.formwrapper}>
-        <h2>Get in touch</h2>
-        <div tabIndex="0">
+        <h2 className={styles.formHeader}>Get in touch</h2>
+        <div tabIndex="0" className={styles.inputField}>
           <label>Name</label>
           <input placeholder="What should I call you" required></input>
         </div>
@@ -29,6 +29,3 @@ const Contact = () => {
 };
 
 export default Contact;
-// we got the differnt input
-
-// when we press
