@@ -12,7 +12,7 @@
   flex-direction: column;
   height: var(--footerHeight);
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 .icons {
   width: 14rem;

@@ -7,7 +7,6 @@
   right: 5%;
   top: 50px;
   z-index: 5;
-  transition: all 0.2s linear;
 }
 
 .button {
@@ -40,7 +39,7 @@
   height: 3px;
   background-color: white;
   border-radius: 3px;
-  transition: all 0.5s linear;
+  transition: all 0.5s ease-in-out;
 }
 .button .hamburger::before,
 .button .hamburger::after {
@@ -50,7 +49,7 @@
   height: 3px;
   background-color: white;
   border-radius: 3px;
-  transition: all 0.3s linear;
+  transition: all 0.5s ease-in-out;
 }
 
 .button .hamburger::before {
@@ -96,8 +95,9 @@ span > * {
   gap: 35px;
   width: 120px;
   height: 38px;
-  transition: all 0.2s ease-in;
+  opacity: 0;
 }
+
 .sidemenu > div > * {
   color: white;
   font-size: 1.4rem;
@@ -111,7 +111,9 @@ span > * {
   cursor: pointer;
   width: 70%;
   padding: 5px;
+  transition: all 0.2s ease-in-out;
 }
+
 .sidemenu.show {
   width: 200px;
   height: 200px;
@@ -123,8 +125,32 @@ span > * {
   justify-content: center;
   flex-direction: column;
   opacity: 1;
-  transform: scale(1);
   box-shadow: -10px 10px 20px rgba(5, 5, 5, 0.9);
+  animation: animateNav 0.2s ease-in-out;
+}
+.sidemenu.show > div {
+  opacity: 1;
+  animation: animate 0.5s ease-out;
+}
+@keyframes animate {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animateNav {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .sidemenu > div > *.active {
