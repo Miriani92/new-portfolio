@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import styles from "./Nav.module.css";
 import { BsPerson } from "react-icons/bs";
@@ -8,7 +8,13 @@ import { navLinks } from "../data/Links";
 
 const Nav = () => {
   const [button, setButton] = useState(false);
+  const [offsetValue, setOffsetValue] = useState(-50);
   const [home, about, projects, contact] = navLinks;
+
+  useEffect(() => {
+    window.innerHeight > 900 && setOffsetValue(-120);
+  }, []);
+
   return (
     <nav className={styles.nav}>
       <div
@@ -75,7 +81,7 @@ const Nav = () => {
             to={contact.path}
             spy={true}
             smooth={true}
-            offset={-50}
+            offset={offsetValue}
             duration={700}
           >
             <span>
