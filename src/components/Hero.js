@@ -12,7 +12,7 @@ const Hero = () => {
       const y = (e.pageY * 3) / 100;
       allDivs.forEach((element) => {
         element.style.transform = `translateX(${x}px) translateY(${y}px) rotate(${rotateValue}deg) `;
-        rotateValue += 1;
+        rotateValue += 0.4;
       });
     };
     document.addEventListener("mousemove", moveDivs);
