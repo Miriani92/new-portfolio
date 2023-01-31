@@ -10,9 +10,25 @@
 }
 body {
   font-family: "Inter", sans-serif;
-  scroll-behavior: smooth;
 }
 
 .App {
   background-color: #f6f3f3;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.App > section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+.third {
+  height: 300vh;
+}
+.fourth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }

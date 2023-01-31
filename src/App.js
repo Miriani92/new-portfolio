@@ -25,13 +25,21 @@ function App() {
 
   return (
     <div className="App" id="Home">
-      <Header />
-      {show && <Nav />}
-      <Hero />
-      <Expertise />
-      <Projects />
-      <Contact />
-      <Footer />
+      <section className="first">
+        <Header />
+        {show && <Nav />}
+        <Hero />
+      </section>
+      <section className="second">
+        <Expertise />
+      </section>
+      <section className="third">
+        <Projects />
+      </section>
+      <section className="fourth">
+        <Contact />
+        <Footer />
+      </section>
     </div>
   );
 }
