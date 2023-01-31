@@ -10,9 +10,8 @@
 }
 body {
   font-family: "Inter", sans-serif;
-  scroll-behavior: smooth;
-}
-
-.App {
   background-color: #f6f3f3;
+  background-color: #dad7d7;
+
+  transition: background 0.2s ease-in-out;
 }
