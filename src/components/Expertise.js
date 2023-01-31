@@ -9,7 +9,7 @@ import { DiMongodb } from "react-icons/di";
 
 const Expertise = () => {
   return (
-    <article className={styles.expertise}>
+    <article className={styles.expertise} id="About">
       <h2>My Expertise</h2>
       <div className={styles.skillswrapper}>
         <div className={styles.react}>

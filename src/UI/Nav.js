@@ -9,7 +9,6 @@ import { navLinks } from "../data/Links";
 const Nav = () => {
   const [button, setButton] = useState(false);
   const [home, about, projects, contact] = navLinks;
-
   return (
     <nav className={styles.nav}>
       <div
@@ -27,9 +26,6 @@ const Nav = () => {
         }
       >
         <div>
-          <span>
-            <AiOutlineHome />
-          </span>
           <Link
             to={home.path}
             spy={true}
@@ -37,13 +33,13 @@ const Nav = () => {
             offset={-50}
             duration={700}
           >
+            <span>
+              <AiOutlineHome />
+            </span>
             {home.name}{" "}
           </Link>
         </div>
         <div>
-          <span>
-            <BsPerson />
-          </span>
           <Link
             activeClass={styles.active}
             to={about.path}
@@ -52,13 +48,13 @@ const Nav = () => {
             offset={-50}
             duration={700}
           >
+            <span>
+              <BsPerson />
+            </span>
             {about.name}
           </Link>
         </div>
         <div>
-          <span>
-            <MdOutlineWorkOutline />
-          </span>
           <Link
             activeClass={styles.active}
             to={projects.path}
@@ -67,13 +63,13 @@ const Nav = () => {
             offset={-50}
             duration={700}
           >
+            <span>
+              <MdOutlineWorkOutline />
+            </span>
             {projects.name}
           </Link>
         </div>
         <div>
-          <span>
-            <AiOutlineMail />
-          </span>
           <Link
             activeClass={styles.active}
             to={contact.path}
@@ -82,6 +78,9 @@ const Nav = () => {
             offset={-50}
             duration={700}
           >
+            <span>
+              <AiOutlineMail />
+            </span>
             {contact.name}
           </Link>
         </div>

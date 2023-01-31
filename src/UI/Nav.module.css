@@ -69,6 +69,7 @@
 .button.clicked .hamburger::after {
   transform: rotate(-45deg) translate(37px, 37px);
 }
+
 .sidemenu {
   width: 0px;
   height: 0px;
@@ -78,16 +79,6 @@
   transition: all 0.2s linear;
 }
 
-span {
-  position: relative;
-  display: inline-block;
-}
-
-span > * {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
 .sidemenu > div {
   display: flex;
   align-items: center;
@@ -154,7 +145,19 @@ span > * {
 }
 
 .sidemenu > div > *.active {
-  color: rgb(78, 67, 67);
+  color: rgb(208, 192, 192);
+}
+span {
+  margin-right: 10px;
+  height: 1.4rem;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+}
+span > * {
+  vertical-align: -3px;
+}
+span > *.active {
+  box-shadow: 3px 3px 7px #000000;
 }
 @media screen and (max-width: 500px) {
   .nav {
