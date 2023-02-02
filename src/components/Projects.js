@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Projects.module.css";
 import Projectcard from "../UI/Projectcard";
 import { projects } from "../data/projectData";
+import ProjectGrid from "./ProjectGrid";
 
 const Projects = () => {
   return (
@@ -10,6 +11,7 @@ const Projects = () => {
       {projects.map((item, ind) => {
         return <Projectcard key={ind} {...item}></Projectcard>;
       })}
+      <ProjectGrid></ProjectGrid>
     </div>
   );
 };
