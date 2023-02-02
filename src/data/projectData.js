@@ -19,6 +19,7 @@ export const projects = [
       " used Countries API, project has light and dark mode, users can search country by region, name",
     image1: countries,
     image2: countryphone,
+    reverse: true,
   },
   {
     name: "Typetrainer",

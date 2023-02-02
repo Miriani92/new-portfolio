@@ -2,24 +2,41 @@ import React from "react";
 import styles from "./Projectcard.module.css";
 import { FaArrowRight } from "react-icons/fa";
 
-const Projectcard = ({ name, image1, image2, description }) => {
+const Projectcard = ({
+  name,
+  image1,
+  image2,
+  description,
+  reverse = false,
+}) => {
+  console.log(reverse);
   return (
     <div className={styles.cardwrapper}>
-      <div className={styles.card}>
-        <div className={styles.discription}>
-          <h3>{name}</h3>
-          <p>{description}</p>
-          <button>
-            See more
-            <FaArrowRight />
-          </button>
-        </div>
-        <div className={styles.images}>
+      <div className={`${styles.card} ${reverse && styles.reverse}`}>
+        <div className={`${styles.images} ${reverse && styles.imagereverse}`}>
           <div>
             <img src={image1} />
           </div>
-          <div>
-            <img src={image2} />
+        </div>
+        <div className={styles.discriptionWrapper}>
+          <p className={`${styles.featured} ${reverse && styles.reversedtext}`}>
+            Featured project
+          </p>
+          <h2
+            className={`${styles.featured} ${reverse && styles.reversedtext}`}
+          >
+            {name}
+          </h2>
+          <div
+            className={`${styles.discription} ${
+              reverse && styles.discriptionreversed
+            }`}
+          >
+            <p>{description}</p>
+            {/* <button>
+            See more
+            <FaArrowRight />
+          </button> */}
           </div>
         </div>
       </div>
