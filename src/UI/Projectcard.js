@@ -9,7 +9,6 @@ const Projectcard = ({
   description,
   reverse = false,
 }) => {
-  console.log(reverse);
   return (
     <div className={styles.cardwrapper}>
       <div className={`${styles.card} ${reverse && styles.reverse}`}>

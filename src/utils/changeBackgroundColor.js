@@ -5,7 +5,7 @@ export const changeBackgroundColor = () => {
   }
 
   if (scrollFromTop > 200 && scrollFromTop < 2600) {
-    document.body.style.backgroundColor = "#a8b2d1";
+    document.body.style.backgroundColor = "var(--lightest-navy)";
   }
   if (scrollFromTop > 2600) {
     document.body.style.backgroundColor = "#f6f3f3";

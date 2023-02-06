@@ -2,46 +2,66 @@ import React from "react";
 import styles from "./Expertise.module.css";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiCss3Fill } from "react-icons/ri";
-import { FaHtml5, FaNodeJs, FaFigma, FaReact, FaAngular } from "react-icons/fa";
+import { FaHtml5, FaNodeJs, FaReact, FaAngular } from "react-icons/fa";
 import { GrGraphQl } from "react-icons/gr";
 import { SiMaterialui } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 
 const Expertise = () => {
   return (
-    <article className={styles.expertise} id="About">
-      <h2>My Expertise</h2>
-      <div className={styles.skillswrapper}>
-        <div className={styles.react}>
-          <FaReact />
-        </div>
-        <div className={styles.css}>
-          <RiCss3Fill />
-        </div>
-        <div className={styles.angular}>
-          <FaAngular />
-        </div>
-        <div className={styles.node}>
-          <FaNodeJs />
-        </div>
-        <div className={styles.html}>
-          <DiMongodb />
-        </div>
-        <div className={styles.graph}>
-          <GrGraphQl />
-        </div>
-        <div className={styles.javascript}>
-          <IoLogoJavascript />
-        </div>
+    <>
+      <section className={styles.expertisewrapper}>
+        <article className={styles.expertise} id="About">
+          <div className={styles.skillswrapper}>
+            <div className={styles.react}>
+              <FaReact />
+            </div>
+            <div className={styles.css}>
+              <RiCss3Fill />
+            </div>
+            <div className={styles.angular}>
+              <FaAngular />
+            </div>
+            <div className={styles.node}>
+              <FaNodeJs />
+            </div>
+            <div className={styles.html}>
+              <DiMongodb />
+            </div>
+            <div className={styles.graph}>
+              <GrGraphQl />
+            </div>
+            <div className={styles.javascript}>
+              <IoLogoJavascript />
+            </div>
 
-        <div className={styles.material}>
-          <SiMaterialui />
-        </div>
-        <div className={styles.mongodb}>
-          <FaHtml5 />
-        </div>
-      </div>
-    </article>
+            <div className={styles.material}>
+              <SiMaterialui />
+            </div>
+            <div className={styles.mongodb}>
+              <FaHtml5 />
+            </div>
+          </div>
+          <div className={styles.about}>
+            <div className={styles.panel}>
+              <div className={styles.dotwrapper}>
+                <div className={styles.first}></div>
+                <div className={styles.second}></div>
+                <div className={styles.third}></div>
+              </div>
+            </div>
+            <p>
+              My name is Miriani, I'm a full-stack developer based in Georgia, I
+              enjoy building dynamic, creative products from start to finish. I
+              help companies and startups to grow, always focused on developing
+              intuitive experiences that constantly change and improve based on
+              user metrics.
+            </p>
+          </div>
+        </article>
+        {/* <div className={styles.aboutskills}></div> */}
+      </section>
+    </>
   );
 };
 

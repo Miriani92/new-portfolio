@@ -15,8 +15,8 @@ const GridCard = ({ name, description, stack }) => {
         <p>{description}</p>
       </div>
       <div className={styles.stack}>
-        {stack.map((technology) => {
-          return <p>{technology}</p>;
+        {stack.map((technology, index) => {
+          return <p key={index}>{technology}</p>;
         })}
       </div>
     </div>

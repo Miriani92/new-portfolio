@@ -63,7 +63,7 @@
 }
 .formwrapper > button:hover {
   transition: all 0.2s linear;
-  background-color: rgb(80, 108, 167);
+  background-color: var(--blue-menu);
   color: white;
 }
 .formwrapper > h2 {
