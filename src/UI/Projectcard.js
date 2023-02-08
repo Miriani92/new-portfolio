@@ -1,14 +1,7 @@
 import React from "react";
 import styles from "./Projectcard.module.css";
-import { FaArrowRight } from "react-icons/fa";
 
-const Projectcard = ({
-  name,
-  image1,
-  image2,
-  description,
-  reverse = false,
-}) => {
+const Projectcard = ({ name, image1, description, reverse = false }) => {
   return (
     <div className={styles.cardwrapper}>
       <div className={`${styles.card} ${reverse && styles.reverse}`}>

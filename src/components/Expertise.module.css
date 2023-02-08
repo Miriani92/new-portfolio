@@ -41,7 +41,7 @@
   border: 1px solid var(--light-slate);
 }
 .about > p {
-  padding: 16px;
+  padding: 16px 16px 0px 16px;
   color: rgb(183, 198, 212);
 }
 .panel {
