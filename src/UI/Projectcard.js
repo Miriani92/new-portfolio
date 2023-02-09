@@ -42,11 +42,7 @@ const Projectcard = ({ name, image1, description, reverse = false }) => {
               reverse && styles.discriptionreversed
             }`}
           >
-            <p>{description}</p>
-            {/* <button>
-            See more
-            <FaArrowRight />
-          </button> */}
+            <p className={styles.descriptiontext}>{description}</p>
           </div>
         </div>
       </div>

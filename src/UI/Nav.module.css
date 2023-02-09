@@ -37,7 +37,7 @@
   position: relative;
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-image: var(--header-text-color);
   border-radius: 3px;
   transition: all 0.5s ease-in-out;
 }
@@ -47,7 +47,7 @@
   position: absolute;
   width: 20px;
   height: 3px;
-  background-color: white;
+  background-image: var(--header-text-color);
   border-radius: 3px;
   transition: all 0.5s ease-in-out;
 }
@@ -90,7 +90,7 @@
 }
 
 .sidemenu > div > * {
-  color: white;
+  color: rgb(211, 214, 218);
   font-size: 1.4rem;
   font-weight: 500;
   text-decoration: none;
@@ -145,7 +145,7 @@
 }
 
 .sidemenu > div > *.active {
-  color: rgb(208, 192, 192);
+  color: rgb(171, 162, 162);
 }
 span {
   margin-right: 10px;

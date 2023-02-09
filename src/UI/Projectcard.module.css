@@ -13,11 +13,17 @@
 .featured {
   text-align: right;
   padding-bottom: 8px;
+  background-image: var(--header-text-color);
+  background-clip: text;
+  font-weight: 700;
+  color: transparent;
 }
 .reverse {
   flex-direction: row-reverse;
 }
-
+.descriptiontext {
+  color: rgb(211, 214, 218);
+}
 .discriptionWrapper {
   margin-top: -50px;
 }
@@ -48,7 +54,7 @@
   margin-left: -100px;
   width: 600px;
   height: 150px;
-  background-color: red;
+  background-color: var(--dark-slate);
   display: flex;
   text-align: start;
   align-items: flex-start;
