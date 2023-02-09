@@ -57,13 +57,13 @@
 }
 .about > p {
   padding: 16px 16px 0px 16px;
-  color: rgb(211, 214, 218);
+  color: rgb(156, 164, 173);
 }
 .panel {
   padding-left: 8px;
   width: 100%;
   height: 40px;
-  background-color: rgb(164, 176, 187);
+  background-color: rgb(123, 133, 144);
 }
 .dotwrapper {
   display: flex;
@@ -124,7 +124,7 @@
 }
 .html {
   grid-area: f;
-  color: rgba(17, 17, 17, 0.863);
+  color: rgb(94, 94, 89);
 }
 .html > * {
   font-size: 50px;
