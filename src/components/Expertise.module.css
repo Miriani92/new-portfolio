@@ -12,8 +12,23 @@
   background-size: 100%;
 }
 .expertisewrapper {
+  margin-top: 100px;
   position: relative;
   margin-bottom: 200px;
+}
+.animateexpertise {
+  animation: animateexpertise 0.8s ease-out;
+}
+@keyframes animateexpertise {
+  0% {
+    scale: translateY(0%);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 .expertise::before {
   content: "";

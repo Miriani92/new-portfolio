@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./Expertise.module.css";
+import { animateOnScroll } from "../utils/observerOnScroll";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiCss3Fill } from "react-icons/ri";
 import { FaHtml5, FaNodeJs, FaReact, FaAngular } from "react-icons/fa";
@@ -8,9 +9,17 @@ import { SiMaterialui } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 
 const Expertise = () => {
+  const expertisewrapper = useRef();
+
+  useEffect(() => {
+    animateOnScroll(
+      expertisewrapper.current,
+      `${styles.expertisewrapper} ${styles.animateexpertise}`
+    );
+  }, []);
   return (
     <>
-      <section className={styles.expertisewrapper}>
+      <section className={styles.expertisewrapper} ref={expertisewrapper}>
         <article className={styles.expertise} id="About">
           <div className={styles.skillswrapper}>
             <div className={styles.react}>
