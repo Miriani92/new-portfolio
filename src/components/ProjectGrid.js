@@ -9,7 +9,7 @@ const ProjectGrid = () => {
       <h2 style={{ textAlign: "center", marginBottom: 42 }}>Other projects</h2>
       <div className={styles.projectswrapper}>
         {moreProjects.map((project, index) => {
-          return <GridCard key={index} {...project}></GridCard>;
+          return <GridCard key={index} {...project} index={index}></GridCard>;
         })}
       </div>
     </section>

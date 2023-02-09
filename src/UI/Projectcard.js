@@ -1,17 +1,20 @@
 import React, { useRef, useEffect } from "react";
 import styles from "./Projectcard.module.css";
-import { onScroll } from "../utils/observerOnScroll";
+import { animateOnScroll } from "../utils/observerOnScroll";
 
 const Projectcard = ({ name, image1, description, reverse = false }) => {
   const descriptionRef = useRef();
   const imageRef = useRef();
 
   useEffect(() => {
-    onScroll(
+    animateOnScroll(
       descriptionRef.current,
       ` ${styles.discriptionWrapper} ${styles.animatediscription}`
     );
-    onScroll(imageRef.current, ` ${styles.images} ${styles.animateimage}`);
+    animateOnScroll(
+      imageRef.current,
+      ` ${styles.images} ${styles.animateimage}`
+    );
   }, []);
   return (
     <div className={styles.cardwrapper}>

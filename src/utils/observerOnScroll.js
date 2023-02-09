@@ -1,4 +1,4 @@
-export const onScroll = (element, className) => {
+export const animateOnScroll = (element, className) => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {

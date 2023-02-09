@@ -5,6 +5,21 @@
   background-color: #57cbff;
   padding: 24px;
 }
+.animatecard {
+  animation: animatecard 0.5s ease-out;
+  animation-delay: var(--delay);
+}
+@keyframes animatecard {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 .iconwrapper {
   display: flex;
   justify-content: space-between;
