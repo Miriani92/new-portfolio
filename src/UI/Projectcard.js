@@ -1,23 +1,33 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import styles from "./Projectcard.module.css";
-import { FaArrowRight } from "react-icons/fa";
+import { animateOnScroll } from "../utils/observerOnScroll";
 
-const Projectcard = ({
-  name,
-  image1,
-  image2,
-  description,
-  reverse = false,
-}) => {
+const Projectcard = ({ name, image1, description, reverse = false }) => {
+  const descriptionRef = useRef();
+  const imageRef = useRef();
+
+  useEffect(() => {
+    animateOnScroll(
+      descriptionRef.current,
+      ` ${styles.discriptionWrapper} ${styles.animatediscription}`
+    );
+    animateOnScroll(
+      imageRef.current,
+      ` ${styles.images} ${styles.animateimage}`
+    );
+  }, []);
   return (
     <div className={styles.cardwrapper}>
       <div className={`${styles.card} ${reverse && styles.reverse}`}>
-        <div className={`${styles.images} ${reverse && styles.imagereverse}`}>
+        <div
+          className={`${styles.images} ${reverse && styles.imagereverse}`}
+          ref={imageRef}
+        >
           <div>
             <img src={image1} />
           </div>
         </div>
-        <div className={styles.discriptionWrapper}>
+        <div className={styles.discriptionWrapper} ref={descriptionRef}>
           <p className={`${styles.featured} ${reverse && styles.reversedtext}`}>
             Featured project
           </p>

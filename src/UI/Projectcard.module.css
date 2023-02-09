@@ -21,6 +21,22 @@
 .discriptionWrapper {
   margin-top: -50px;
 }
+.animatediscription {
+  animation: discription 0.8s ease-out;
+}
+
+@keyframes discription {
+  0% {
+    transform: translateX(10%);
+  }
+  75% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
 .reversedtext {
   position: relative;
   text-align: start;
@@ -50,6 +66,21 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+.animateimage {
+  animation: animateimage 0.8s ease-out;
+}
+
+@keyframes animateimage {
+  0% {
+    transform: translateX(-10%);
+  }
+  75% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 .imagereverse {
   margin-right: -100px;
