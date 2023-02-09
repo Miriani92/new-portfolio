@@ -1,8 +1,9 @@
-export const animateOnScroll = (element, className) => {
+export const animateOnScroll = (element, className, color) => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.className = className;
+        if (color) document.body.style.backgroundColor = color;
+        if (className) entry.target.className = className;
       }
     });
   });

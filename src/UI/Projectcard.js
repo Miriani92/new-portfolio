@@ -9,7 +9,8 @@ const Projectcard = ({ name, image1, description, reverse = false }) => {
   useEffect(() => {
     animateOnScroll(
       descriptionRef.current,
-      ` ${styles.discriptionWrapper} ${styles.animatediscription}`
+      ` ${styles.discriptionWrapper} ${styles.animatediscription}`,
+      "var(--green)"
     );
     animateOnScroll(
       imageRef.current,

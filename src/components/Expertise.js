@@ -14,7 +14,8 @@ const Expertise = () => {
   useEffect(() => {
     animateOnScroll(
       expertisewrapper.current,
-      `${styles.expertisewrapper} ${styles.animateexpertise}`
+      `${styles.expertisewrapper} ${styles.animateexpertise}`,
+      "var(--lightest-navy)"
     );
   }, []);
   return (
