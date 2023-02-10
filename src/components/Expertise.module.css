@@ -17,17 +17,15 @@
   margin-bottom: 200px;
 }
 .animateexpertise {
-  animation: animateexpertise 0.8s ease-out;
+  animation: animateexpertise 0.7s ease-out;
 }
 @keyframes animateexpertise {
-  0% {
-    scale: translateY(0%);
+  from {
+    transform: translateY(30%);
   }
-  50% {
-    transform: translateY(10%);
-  }
-  100% {
-    transform: translateY(0%);
+
+  to {
+    transform: translateY(0);
   }
 }
 .expertise::before {
