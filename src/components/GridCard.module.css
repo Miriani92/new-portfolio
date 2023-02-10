@@ -2,8 +2,9 @@
   position: relative;
   width: 400px;
   height: 300px;
-  background-color: #57cbff;
+  background-color: var(--blue);
   padding: 24px;
+  border-radius: var(--radius);
 }
 .animatecard {
   animation: animatecard 0.5s ease-out;
@@ -28,6 +29,7 @@
 .folder,
 .github {
   font-size: 36px;
+  color: var(--grey);
 }
 .descriptionwrapper {
   display: flex;
@@ -35,6 +37,7 @@
   align-items: stretch;
   justify-content: center;
   gap: 12px;
+  color: var(--grey);
 }
 .stack {
   position: absolute;

@@ -11,6 +11,7 @@
 
 :root {
   --main-header: #f6f3f3;
+  --grey: rgb(16, 16, 16);
   --blue-menu: rgb(55, 80, 134);
   --header-text-color: linear-gradient(
     333deg,
@@ -30,8 +31,9 @@
   --green: #044331;
   --green-tint: rgba(100, 255, 218, 0.1);
   --pink: #f57dff;
-  --blue: #57cbff;
-  --other-color: rgb(43, 16, 107);
+  --blue: #168ec5;
+  --other-color: rgb(25, 11, 57);
+  --radius: 10px;
 }
 
 body {
