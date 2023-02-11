@@ -165,11 +165,18 @@
   font-size: 50px;
 }
 
-@media screen and (min-width: 501px) and (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
+  .skillswrapper {
+    margin-top: 400px;
+    margin-bottom: 100px;
+    bottom: 100px;
+  }
   .about {
-    font-size: 12px;
-    height: 170px;
-    padding-bottom: 8px;
+    font-size: 16px;
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+    height: fit-content;
   }
 
   .panel {
@@ -184,6 +191,19 @@
     width: 16px;
     height: 16px;
   }
+}
+@media screen and (max-width: 950px) {
+  .skillswrapper {
+    margin-top: 300px;
+    margin-bottom: 100px;
+  }
+  .about {
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 800px) {
   .javascript > * {
     font-size: 30px;
   }
@@ -211,24 +231,31 @@
   .material > * {
     font-size: 30px;
   }
-  /* .skillswrapper { */
-  /* grid-template-rows: repeat(3, 30px); */
-  /* margin-top: 5px; */
-  /* } */
 }
-@media screen and (max-width: 950px) {
+
+@media screen and (max-width: 700px) {
   .skillswrapper {
     margin-top: 300px;
     margin-bottom: 100px;
+    bottom: 100px;
   }
+
   .about {
     width: 100%;
-    position: relative;
-    margin-top: 100px;
+    margin-top: 0;
   }
 }
-
 @media screen and (max-width: 545px) {
+  .skillswrapper {
+    margin-top: 340px;
+    margin-bottom: 100px;
+    bottom: 100px;
+  }
+
+  .about {
+    width: 100%;
+    margin-top: 0;
+  }
   .javascript > * {
     font-size: 18px;
   }
