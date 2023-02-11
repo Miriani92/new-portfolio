@@ -25,14 +25,21 @@
 
 @media screen and (max-width: 1200px) {
   .projectswrapper {
-    display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .title {
+    font-size: 24px;
   }
 }
 
 @media screen and (max-width: 800px) {
   .projectswrapper {
-    display: grid;
     grid-template-columns: 1fr;
   }
+}
+
+@media screen and (max-width: 500px) {
+  /* .projectswrapper {
+    width: ;
+  } */
 }
