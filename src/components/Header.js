@@ -9,7 +9,7 @@ const Header = () => {
     <header className={styles.header} id="header">
       <div className={styles.imageWrapper} id="imageWrapper">
         <div>
-          <img src={myImage} />
+          <img src={myImage} alt="myimage" />
         </div>
         <p>mirian tsintsadze</p>
       </div>
