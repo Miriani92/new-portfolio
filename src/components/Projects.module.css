@@ -5,11 +5,11 @@
   justify-content: center;
   flex-direction: column;
   margin-bottom: 10rem;
-  width: 70%;
+  min-width: 70%;
 }
 
 .title {
-  padding-bottom: 2rem;
+  padding-bottom: var(--margin-large);
   background-image: linear-gradient(
     333deg,
     rgb(134, 134, 143) 73%,

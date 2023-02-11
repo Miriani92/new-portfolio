@@ -34,6 +34,9 @@
   --blue: #168ec5;
   --other-color: rgb(25, 11, 57);
   --radius: 10px;
+  --margin-large: 42px;
+  --margin-medium: 32px;
+  --margin-small: 24px;
 }
 
 body {

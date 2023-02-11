@@ -7,8 +7,9 @@
   width: 90vw;
   align-items: center;
   justify-content: center;
-  height: 600px;
+  height: min-content;
   border-radius: 20px;
+  padding-bottom: var(--margin-large);
 }
 .featured {
   text-align: right;
@@ -19,6 +20,8 @@
   color: transparent;
 }
 .reverse {
+  position: relative;
+  margin-left: 100px;
   flex-direction: row-reverse;
 }
 .descriptiontext {
@@ -42,7 +45,6 @@
     transform: translateX(0%);
   }
 }
-
 .reversedtext {
   position: relative;
   text-align: start;
@@ -63,7 +65,6 @@
   gap: 1rem;
   border-radius: var(--radius);
 }
-
 .discriptionreversed {
   margin-right: -100px;
 }
@@ -92,9 +93,6 @@
     transform: translateX(0%);
   }
 }
-.imagereverse {
-  margin-right: -100px;
-}
 
 .images > div {
   width: 900px;
@@ -104,198 +102,19 @@
   align-items: center;
   justify-content: center;
 }
-.images > div:nth-child(2) {
-  width: fit-content;
-  width: 150px;
-  height: 310px;
-  border-radius: 5px;
-}
 .images > div:nth-child(1) > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.images > div:nth-child(2) > img {
-  width: 200px;
-  height: 300px;
-  object-fit: contain;
-  border-radius: 20px;
-}
-
-.images > div:nth-child(2)::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: url("../assets/devices/ip-13.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-}
-
-@media screen and (max-width: 600px) {
-  .card {
-    background-image: linear-gradient(
-      rgba(72, 136, 12, 0.76) 50%,
-      rgb(98, 98, 199) 50%
-    );
-  }
-  .images {
-    position: relative;
-  }
-
+@media screen and (max-width: 1600px) {
   .images > div {
-    position: absolute;
-    width: 300px;
-    height: 150px;
-  }
-  .images > div:nth-child(1) > img {
-    width: 290px;
-    height: 140px;
-  }
-  .images > div:nth-child(2) {
-    width: 125px;
-    height: 250px;
-    left: 25px;
-  }
-  .images > div:nth-child(2) img {
-    width: 125px;
-    height: 240px;
-  }
-  .card {
+    width: 700px;
+    height: 350px;
     position: relative;
-    justify-content: space-evenly;
-    height: 600px;
-  }
-  .discription {
-    position: absolute;
-    top: 20%;
-    transform: translateY(-50%);
-    gap: 20px;
-  }
-  .card > div:nth-child(2) {
-    position: absolute;
-    top: 75%;
-    transform: translateY(-50%);
-  }
-  .discription > button {
-    display: relative;
-    width: 100px;
-    height: 2rem;
-    border: 1px solid black;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: rgb(24, 23, 23);
-  }
-
-  .card {
-    padding-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 270px) and (max-width: 400px) {
-  .images > div {
-    position: absolute;
-    width: 200px;
-    height: 100px;
-  }
-  .images > div:nth-child(1) > img {
-    width: 200px;
-    height: 100px;
-  }
-  .images > div:nth-child(2) {
-    width: 70px;
-    height: 160px;
-    left: 30px;
-  }
-  .images > div:nth-child(2) img {
-    width: 70px;
-    height: 160px;
-  }
-  .card {
-    height: 500px;
-  }
-  .discription {
-    position: absolute;
-    top: 25%;
-    transform: translateY(-50%);
-    gap: 10px;
-    width: 200px;
-  }
-
-  .discription > button {
-    display: relative;
-    width: 100px;
-    height: 2rem;
-    border: 1px solid black;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: rgb(24, 23, 23);
-  }
-
-  .card {
-    padding-bottom: 0;
-  }
-}
-@media screen and (min-width: 501px) and (max-width: 1365px) {
-  .card {
-    background-image: linear-gradient(
-      rgba(72, 136, 12, 0.76) 50%,
-      rgb(98, 98, 199) 50%
-    );
-  }
-  .images {
-    position: relative;
-  }
-
-  .images > div {
-    position: absolute;
-    width: 350px;
-    height: 175px;
-  }
-  .images > div:nth-child(1) > img {
-    width: 340px;
-    height: 175px;
-  }
-  .images > div:nth-child(2) {
-    width: 150px;
-    height: 300px;
-    left: 25px;
-  }
-  .images > div:nth-child(2) img {
-    width: 150px;
-    height: 290px;
-  }
-  .card {
-    position: relative;
-    justify-content: space-evenly;
-    height: 700px;
-  }
-  .discription {
-    position: absolute;
-    top: 20%;
-    transform: translateY(-50%);
-    gap: 20px;
-  }
-  .card > div:nth-child(2) {
-    position: absolute;
-    top: 75%;
-    transform: translateY(-50%);
-  }
-  .discription > button {
-    display: relative;
-    width: 130px;
-    height: 2rem;
-    border: 1px solid black;
-    font-size: 1rem;
-    font-weight: 600;
-    color: rgb(24, 23, 23);
-  }
-
-  .card {
-    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

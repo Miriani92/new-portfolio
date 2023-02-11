@@ -25,7 +25,7 @@ const Projectcard = ({ name, image1, description, reverse = false }) => {
           ref={imageRef}
         >
           <div>
-            <img src={image1} />
+            <img src={image1} alt="projectimage" />
           </div>
         </div>
         <div className={styles.discriptionWrapper} ref={descriptionRef}>
