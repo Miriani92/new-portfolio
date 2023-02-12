@@ -32,35 +32,41 @@ export const moreProjects = [
     description:
       "eCommerece app that  displays new technologies in beauty business. ",
     stack: ["React", "Css", "Express"],
+    link: "https://github.com/Miriani92/Beautyline",
   },
   {
     name: "Countryfinder",
     description:
       "Used Countries Api, it shows all Countries in the world, project has light and dark mode, users can search country by region, name.",
     stack: ["React", "Css"],
+    link: "https://github.com/Miriani92/Searchforcountry",
   },
   {
     name: "Google Doc Clone",
     description:
       "A lightweight google doc clone application that has every essential feature that google doc has.",
     stack: ["React", "Css", "Redux"],
+    link: "https://github.com/Miriani92/googledoc",
   },
   {
     name: "Typeahead",
     description:
       "Used Github Api, created app that searches users on the github.",
     stack: ["React", "Css"],
+    link: "https://github.com/Miriani92/Typeahead",
   },
   {
     name: "Food Order Application",
     description:
       "One of my first project. this is app that adds the desired food in the cart, has the list of meals where user can choose from.",
     stack: ["React", "Css", "Redux"],
+    link: "https://github.com/Miriani92/food_app",
   },
   {
     name: "Web Scraper",
     description:
       "I did not finished the project yet, this would be the app that scrapes the web (online store) permanently  and sends the message to the user when new product is added to the store.",
     stack: ["Express", "Puppetier", "Cherrio"],
+    link: "https://github.com/Miriani92/web-scraping",
   },
 ];
