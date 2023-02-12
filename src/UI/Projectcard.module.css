@@ -98,7 +98,7 @@
   }
 }
 
-.images > div {
+.images > a > div {
   width: 900px;
   height: 450px;
   position: relative;
@@ -106,14 +106,19 @@
   align-items: center;
   justify-content: center;
 }
-.images > div:nth-child(1) > img {
+.images > a > div:hover {
+  background-color: black;
+  opacity: 0.5;
+  transform: 0.3s ease-out;
+}
+.images > a > div > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 @media screen and (max-width: 1600px) {
-  .images > div {
+  .images > a > div {
     width: 700px;
     height: 350px;
     position: relative;
@@ -143,7 +148,7 @@
 }
 
 @media screen and (max-width: 800px) {
-  .images > div {
+  .images > a > div {
     width: 500px;
     height: 250px;
   }
@@ -158,7 +163,7 @@
 }
 
 @media screen and (max-width: 800px) {
-  .images > div {
+  .images > a > div {
     width: 400px;
     height: 200px;
   }
@@ -171,7 +176,7 @@
   .featured {
     font-size: 16px;
   }
-  .images > div {
+  .images > a > div {
     width: 280px;
     height: 180px;
   }

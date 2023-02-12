@@ -16,7 +16,7 @@ const GridCard = ({ name, description, stack, index, link }) => {
   }, []);
 
   return (
-    <a href={link} className={styles.link}>
+    <a href={link} rel="noreferrer" target="_blank" className={styles.link}>
       <div
         className={styles.card}
         ref={projectCardRef}

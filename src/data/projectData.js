@@ -9,6 +9,7 @@ export const projects = [
       "A minimal eCommerce web-site, application has all functinality that those type of application needs,  it displays different products, products can be added or removed from the cart,shows which products are in stock and which are not.",
     image1: beauty,
     technologies: "Technologies: React Css GraphQL Apollo",
+    link: "https://github.com/Miriani92/store_app",
   },
   {
     name: "User Management System",
@@ -17,6 +18,7 @@ export const projects = [
     image1: countries,
     technologies: "Technologies: Angular Css ExpressJs MongoDB",
     reverse: true,
+    link: "https://github.com/Miriani92/user-base",
   },
   {
     name: "Typetrainer",
@@ -24,6 +26,7 @@ export const projects = [
       "I'm a big fan typing practice websites like 10 fast finger, mokeytype, and thought it would be great  to create my own typing app, typetrainer displays random generated words and after finishing typing it gives us result.",
     image1: trainer,
     technologies: "Technologies: React Css Redux",
+    link: "https://github.com/Miriani92/type-trainer",
   },
 ];
 export const moreProjects = [

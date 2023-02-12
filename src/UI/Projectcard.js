@@ -8,6 +8,7 @@ const Projectcard = ({
   description,
   technologies,
   reverse = false,
+  link,
 }) => {
   const descriptionRef = useRef();
   const imageRef = useRef();
@@ -30,9 +31,11 @@ const Projectcard = ({
           className={`${styles.images} ${reverse && styles.imagereverse}`}
           ref={imageRef}
         >
-          <div>
-            <img src={image1} alt="projectimage" />
-          </div>
+          <a href={link} rel="noreferrer" target="_blank">
+            <div>
+              <img src={image1} alt="projectimage" />
+            </div>
+          </a>
         </div>
         <div className={styles.discriptionWrapper} ref={descriptionRef}>
           <p className={`${styles.featured} ${reverse && styles.reversedtext}`}>
