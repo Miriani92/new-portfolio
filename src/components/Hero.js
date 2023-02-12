@@ -41,8 +41,8 @@ const Hero = () => {
           <p>Tbilissi, Georgia</p>
         </div>
         <p>
-          I'm self-tought web developer, I enjoy building web that is
-          interactive, easy to use, beautiful, accessible to all
+          I'm web developer, I enjoy building web that is interactive, easy to
+          use, beautiful, accessible to all
         </p>
       </main>
     </section>
