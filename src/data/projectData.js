@@ -33,39 +33,37 @@ export const moreProjects = [
   {
     name: "Beautyline",
     description:
-      "this is startup page it displays new technologies in beaty business I am working on the startup with my friend   used React and Figma for design. ",
-    stack: ["css", "react", "express"],
+      "eCommerece app that  displays new technologies in beauty business. ",
+    stack: ["React", "Css", "Express"],
   },
   {
     name: "Countryfinder",
     description:
-      " used Countries API, project has light and dark mode, users can search country by region, name",
-    stack: ["css", "react", "express"],
+      "Used Countries Api, it shows all Countries in the world, project has light and dark mode, users can search country by region, name.",
+    stack: ["React", "Css"],
   },
   {
-    name: "Typetrainer",
+    name: "Google Doc Clone",
     description:
-      "it displays random generated words and based on the type is speed it shows the result, I love 10 fast fingers so I though it would be good project idea.",
-    stack: ["css", "react", "express"],
+      "A lightweight google doc clone application that has every essential feature that google doc has.",
+    stack: ["React", "Css", "Redux"],
   },
   {
-    name: "Beautyline",
+    name: "Typeahead",
     description:
-      "this is startup page it displays new technologies in beaty business I am working on the startup with my friend   used React and Figma for design. ",
-    stack: ["css", "react", "express"],
+      "Used Github Api, created app that searches users on the github.",
+    stack: ["React", "Css"],
   },
   {
-    name: "Countryfinder",
+    name: "Food Order Application",
     description:
-      " used Countries API, project has light and dark mode, users can search country by region, name",
-
-    stack: ["css", "react", "express"],
+      "One of my first project. this is app that adds the desired food in the cart, has the list of meals where user can choose from.",
+    stack: ["React", "Css", "Redux"],
   },
   {
-    name: "Typetrainer",
+    name: "Web Scraper",
     description:
-      "it displays random generated words and based on the type is speed it shows the result, I love 10 fast fingers so I though it would be good project idea.",
-
-    stack: ["css", "react", "express"],
+      "I did not finished the project yet, this would be the app that scrapes the web (online store) permanently  and sends the message to the user when new product is added to the store.",
+    stack: ["Express", "Puppetier", "Cherrio"],
   },
 ];
