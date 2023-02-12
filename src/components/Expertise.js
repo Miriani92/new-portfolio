@@ -63,7 +63,7 @@ const Expertise = () => {
               </div>
               <p>
                 Hi again, I'm a full-stack developer based in Georgia, I build
-                building dynamic, creative products from start to finish. I help
+                dynamic, creative products from start to finish. I help
                 companies and startups to grow, always focused on developing
                 intuitive experiences that constantly change and improve based
                 on user metrics
