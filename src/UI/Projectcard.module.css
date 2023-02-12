@@ -18,6 +18,7 @@
   background-clip: text;
   font-weight: 700;
   color: transparent;
+  height: fit-content;
 }
 .reverse {
   position: relative;
@@ -28,6 +29,7 @@
   color: rgb(211, 214, 218);
 }
 .discriptionWrapper {
+  height: min-content;
   margin-top: -50px;
 }
 .animatediscription {
@@ -55,7 +57,7 @@
   position: relative;
   margin-left: -100px;
   width: 600px;
-  height: 150px;
+  height: min-content;
   background-color: var(--dark-slate);
   display: flex;
   text-align: start;
@@ -68,7 +70,9 @@
 .discriptionreversed {
   margin-right: -100px;
 }
-
+.technologies {
+  color: rgb(211, 214, 218);
+}
 .images {
   display: flex;
   align-items: center;

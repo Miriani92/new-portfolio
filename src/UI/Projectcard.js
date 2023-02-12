@@ -2,7 +2,13 @@ import React, { useRef, useEffect } from "react";
 import styles from "./Projectcard.module.css";
 import { animateOnScroll } from "../utils/observerOnScroll";
 
-const Projectcard = ({ name, image1, description, reverse = false }) => {
+const Projectcard = ({
+  name,
+  image1,
+  description,
+  technologies,
+  reverse = false,
+}) => {
   const descriptionRef = useRef();
   const imageRef = useRef();
 
@@ -43,6 +49,7 @@ const Projectcard = ({ name, image1, description, reverse = false }) => {
             }`}
           >
             <p className={styles.descriptiontext}>{description}</p>
+            <p className={styles.technologies}>{technologies}</p>
           </div>
         </div>
       </div>

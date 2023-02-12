@@ -7,26 +7,26 @@ import countryphone from "../assets/projects_images/countries_phone.jpg";
 
 export const projects = [
   {
-    name: "Beautyline",
+    name: "Ecommerce Website",
     description:
-      "this is startup page it displays new technologies in beaty business I am working on the startup with my friend   used React and Figma for design. ",
+      "A minimal eCommerce web-site, application has all functinality that those type of application needs,  it displays different products, products can be added or removed from the cart,shows which products are in stock and which are not.",
     image1: beauty,
-    image2: beautyphone,
+    technologies: "Technologies: React Css GraphQL Apollo",
   },
   {
-    name: "Countryfinder",
+    name: "User Management System",
     description:
-      " used Countries API, project has light and dark mode, users can search country by region, name",
+      "A user management app, which is created to organize user data, it  has a user registration form through which a new user can be added,The application has a new user search functionality based on entered data, user can edit and delete account and change their status.",
     image1: countries,
-    image2: countryphone,
+    technologies: "Technologies: Angular Css ExpressJs MongoDB",
     reverse: true,
   },
   {
     name: "Typetrainer",
     description:
-      "it displays random generated words and based on the type is speed it shows the result, I love 10 fast fingers so I though it would be good project idea.",
+      "I'm a big fan typing practice websites like 10 fast finger, mokeytype, and thought it would be great  to create my own typing app, typetrainer displays random generated words and after finishing typing it gives us result.",
     image1: trainer,
-    image2: trainerphone,
+    technologies: "Technologies: React Css Redux",
   },
 ];
 export const moreProjects = [
