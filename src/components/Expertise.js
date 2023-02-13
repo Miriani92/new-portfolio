@@ -10,20 +10,21 @@ import { DiMongodb } from "react-icons/di";
 
 const Expertise = () => {
   const expertisewrapper = useRef();
+  const skillWrapper = useRef();
 
   useEffect(() => {
     animateOnScroll(
       expertisewrapper.current,
-      `${styles.expertisewrapper} ${styles.animateexpertise}`,
-      "var(--lightest-navy)"
+      `${styles.expertisewrapper} ${styles.animateexpertise}`
     );
+    animateOnScroll(skillWrapper.current, null, "var(--lightest-navy)");
   }, []);
   return (
     <>
       <section className={styles.expertisewrapper} ref={expertisewrapper}>
         <article className={styles.expertise} id="About">
           <div className={styles.s}>
-            <div className={styles.skillswrapper}>
+            <div className={styles.skillswrapper} ref={skillWrapper}>
               <div className={styles.react}>
                 <FaReact />
               </div>

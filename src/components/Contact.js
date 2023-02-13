@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import styles from "./Contact.module.css";
+import { animateOnScroll as changeBackgroundOnScroll } from "../utils/observerOnScroll";
 
 const Contact = () => {
+  const footerRef = useRef();
+
+  useEffect(() => {
+    changeBackgroundOnScroll(footerRef.current, null, "var(--main-header)");
+  }, []);
   return (
     <form className={styles.form} id="Contact">
       <div className={styles.formwrapper}>
@@ -18,7 +24,7 @@ const Contact = () => {
           <label>Email Address</label>
           <input placeholder="Where should I respond?" required></input>
         </div>
-        <div tabIndex="0">
+        <div tabIndex="0" ref={footerRef}>
           <label>Message</label>
           <textarea placeholder="Haw can I help you"></textarea>
         </div>

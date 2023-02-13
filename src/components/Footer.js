@@ -1,17 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import styles from "./Footer.module.css";
 import { BsLinkedin, BsGithub, BsFacebook } from "react-icons/bs";
-import { animateOnScroll as changeBackgroundOnScroll } from "../utils/observerOnScroll";
 
 const Footer = () => {
-  const footerRef = useRef();
-
-  useEffect(() => {
-    changeBackgroundOnScroll(footerRef.current, null, "var(--main-header)");
-  }, []);
-
   return (
-    <footer className={styles.footer} ref={footerRef}>
+    <footer className={styles.footer}>
       <div className={styles.icons}>
         <a
           href="https://github.com/Miriani92"

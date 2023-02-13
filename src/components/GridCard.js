@@ -10,8 +10,7 @@ const GridCard = ({ name, description, stack, index, link }) => {
   useEffect(() => {
     animateOnScroll(
       projectCardRef.current,
-      `${styles.card} ${styles.animatecard}`,
-      "var(--other-color)"
+      `${styles.card} ${styles.animatecard}`
     );
   }, []);
 
