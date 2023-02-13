@@ -9,7 +9,12 @@ const Contact = () => {
     changeBackgroundOnScroll(footerRef.current, null, "var(--main-header)");
   }, []);
   return (
-    <form className={styles.form} id="Contact">
+    <form
+      className={styles.form}
+      id="Contact"
+      action="https://formsubmit.co/mirian.tsintsadze1992@gmail.com"
+      method="POST"
+    >
       <div className={styles.formwrapper}>
         <h2 className={styles.formHeader}>Get in touch</h2>
         <div tabIndex="0" className={styles.inputField}>
@@ -28,7 +33,7 @@ const Contact = () => {
           <label>Message</label>
           <textarea placeholder="Haw can I help you"></textarea>
         </div>
-        <button>Submit</button>
+        <button type="submit">Submit</button>
       </div>
     </form>
   );
