@@ -1,12 +1,12 @@
 import beauty from "../assets/projects_images/beautyline.jpg";
-import countries from "../assets/projects_images/countries.jpg";
-import trainer from "../assets/projects_images/typetrainer.jpg";
+import userBase from "../assets/projects_images/userBase.png";
+import trainer from "../assets/projects_images/typetrainer.png";
 
 export const projects = [
   {
     name: "Ecommerce Website",
     description:
-      "A minimal eCommerce web-site, application has all functinality that those type of application needs,  it displays different products, products can be added or removed from the cart,shows which products are in stock and which are not.",
+      "A minimal eCommerce web-site, application has all functinality that those type of application needs,  it displays different products, products can be added or removed from the cart, shows which products are in stock and which are not.",
     image1: beauty,
     technologies: "Technologies: React Css GraphQL Apollo",
     link: "https://github.com/Miriani92/store_app",
@@ -14,8 +14,8 @@ export const projects = [
   {
     name: "User Management System",
     description:
-      "A user management app, which is created to organize user data, it  has a user registration form through which a new user can be added,The application has a new user search functionality based on entered data, user can edit and delete account and change their status.",
-    image1: countries,
+      "A user management app, created to organize user data, it  has a user registration form through which a new user can be added,The application has a new user search functionality based on entered data, user can edit and delete account and change their status.",
+    image1: userBase,
     technologies: "Technologies: Angular Css ExpressJs MongoDB",
     reverse: true,
     link: "https://github.com/Miriani92/user-base",
