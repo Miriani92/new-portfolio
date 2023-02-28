@@ -166,8 +166,6 @@
 
 @media screen and (max-width: 1300px) {
   .about {
-    font-size: 16px;
-    width: 90%;
     position: relative;
     height: fit-content;
   }
@@ -188,95 +186,66 @@
     height: 16px;
   }
 }
-@media screen and (max-width: 950px) {
-  .skillswrapper {
-    margin-top: 300px;
-    margin-bottom: 100px;
-  }
-  .about {
-    width: 100%;
-    position: relative;
-    margin-top: 100px;
-  }
-}
 @media screen and (max-width: 800px) {
   .javascript > * {
-    font-size: 30px;
+    font-size: 50px;
   }
   .css > * {
-    font-size: 30px;
+    font-size: 50px;
   }
   .html > * {
-    font-size: 30px;
+    font-size: 50px;
   }
   .node > * {
-    font-size: 30px;
+    font-size: 50px;
   }
   .angular > * {
-    font-size: 30px;
+    font-size: 50px;
   }
   .graph > * {
-    font-size: 30px;
+    font-size: 50px;
   }
   .react > * {
-    font-size: 30px;
+    font-size: 50px;
   }
   .mongodb > * {
-    font-size: 30px;
+    font-size: 50px;
   }
   .material > * {
-    font-size: 30px;
+    font-size: 50px;
   }
 }
 
-@media screen and (max-width: 700px) {
-  .skillswrapper {
-    margin-top: 300px;
-    margin-bottom: 100px;
-    bottom: 100px;
-  }
-
-  .about {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-@media screen and (max-width: 545px) {
-  .skillswrapper {
-    margin-top: 340px;
-    margin-bottom: 100px;
-    bottom: 100px;
-  }
-
+@media screen and (max-width: 576px) {
   .about {
     width: 100%;
     margin-top: 0;
   }
   .javascript > * {
-    font-size: 18px;
+    font-size: 30px;
   }
   .css > * {
-    font-size: 18px;
+    font-size: 30px;
   }
   .html > * {
-    font-size: 25px;
+    font-size: 30px;
   }
   .node > * {
-    font-size: 25px;
+    font-size: 30px;
   }
   .angular > * {
-    font-size: 25px;
+    font-size: 30px;
   }
   .graph > * {
-    font-size: 25px;
+    font-size: 30px;
   }
   .react > * {
-    font-size: 25px;
+    font-size: 30px;
   }
   .mongodb > * {
-    font-size: 25px;
+    font-size: 30px;
   }
   .material > * {
-    font-size: 25px;
+    font-size: 30px;
   }
 }
