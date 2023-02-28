@@ -166,6 +166,7 @@
 
 @media screen and (max-width: 1300px) {
   .about {
+    width: 80%;
     position: relative;
     height: fit-content;
   }
@@ -218,7 +219,7 @@
 
 @media screen and (max-width: 576px) {
   .about {
-    width: 100%;
+    width: 80%;
     margin-top: 0;
   }
   .javascript > * {
