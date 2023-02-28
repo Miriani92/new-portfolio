@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App" id="Home">
+    <div id="Home">
       <Header />
       {show && <Nav />}
       <Hero />
