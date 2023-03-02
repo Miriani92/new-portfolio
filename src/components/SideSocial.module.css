@@ -1,0 +1,46 @@
+.leftsidewrapper,
+.rightsidewrapper {
+  position: fixed;
+  bottom: 0;
+}
+.leftsidewrapper {
+  left: 16px;
+}
+.rightsidewrapper {
+  right: 16px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.leftline,
+.rightline {
+  margin-top: 32px;
+  width: 4px;
+  height: 200px;
+  background-color: var(--light-slate);
+}
+.sociallinkswrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  width: 20px;
+  margin-left: -9px;
+}
+.sociallinkswrapper > a {
+  all: unset;
+  color: var(--dark-slate);
+  cursor: pointer;
+  margin-top: 16px;
+  font-size: 22px;
+}
+a:hover {
+  color: black;
+}
+.gmail {
+  margin-bottom: 120px;
+  transform: rotate(90deg);
+}

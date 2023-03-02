@@ -13,6 +13,7 @@
   height: var(--footerHeight);
   padding-top: 2rem;
   padding-bottom: 4rem;
+  z-index: 100;
 }
 .icons {
   width: 14rem;

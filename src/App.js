@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { SideSocial } from "./components/SideSocial";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -10,7 +11,6 @@ import Nav from "./UI/Nav";
 function App() {
   const [show, setShow] = useState(false);
 
-  //window.addEventListener("scroll", changeBackgroundColor);
   useEffect(() => {
     const onScroll = () => {
       const scrollValue = window.scrollY;
@@ -26,6 +26,7 @@ function App() {
 
   return (
     <div id="Home">
+      <SideSocial />
       <Header />
       {show && <Nav />}
       <Hero />
