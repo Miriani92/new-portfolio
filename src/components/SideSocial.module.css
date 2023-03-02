@@ -1,5 +1,6 @@
 .leftsidewrapper,
 .rightsidewrapper {
+  z-index: 10;
   position: fixed;
   bottom: 0;
 }
@@ -17,10 +18,12 @@
 
 .leftline,
 .rightline {
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
   margin-top: 32px;
   width: 4px;
   height: 200px;
-  background-color: var(--light-slate);
+  background-color: var(--slate);
 }
 .sociallinkswrapper {
   display: flex;
@@ -32,15 +35,18 @@
 }
 .sociallinkswrapper > a {
   all: unset;
-  color: var(--dark-slate);
+  color: var(--slate);
   cursor: pointer;
   margin-top: 16px;
   font-size: 22px;
 }
 a:hover {
-  color: black;
+  color: var(--dark-slate);
+  transition: 0.3s ease-out;
+  transform: translateY(-2px);
 }
 .gmail {
   margin-bottom: 120px;
   transform: rotate(90deg);
+  color: var(--slate);
 }
