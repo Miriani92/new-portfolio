@@ -5,6 +5,7 @@ import { animateOnScroll as changeBackgroundOnScroll } from "../utils/observerOn
 
 const Hero = () => {
   const divRef = useRef(null);
+  const wrapperRef = useRef(null);
   useEffect(() => {
     const allDivs = divRef.current.childNodes;
     let rotateValue = 1;
@@ -17,13 +18,13 @@ const Hero = () => {
       });
     };
     document.addEventListener("mousemove", moveDivs);
-    changeBackgroundOnScroll(divRef.current, null, "var(--main-header)");
+    changeBackgroundOnScroll(wrapperRef.current, null, "var(--main-header)");
     return () => {
       document.removeEventListener("mousemove", moveDivs);
     };
   }, []);
   return (
-    <section className={styles.herowrapper}>
+    <section className={styles.herowrapper} ref={wrapperRef}>
       <main className={styles.hero}>
         <article ref={divRef} className={styles.divWrapper}>
           <div className={styles.one}></div>
