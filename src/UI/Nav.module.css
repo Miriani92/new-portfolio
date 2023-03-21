@@ -83,15 +83,18 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 35px;
+  gap: 38px;
   width: 120px;
   height: 38px;
   opacity: 0;
 }
 
 .sidemenu > div > * {
-  color: rgb(211, 214, 218);
   font-size: 1.4rem;
+  height: 100%;
+  padding-top: 5px;
+  text-align: center;
+  color: rgb(211, 214, 218);
   font-weight: 500;
   text-decoration: none;
 }
@@ -99,12 +102,12 @@
 .sidemenu > div:hover {
   border-radius: 5px;
   background-color: rgba(49, 47, 47, 0.561);
+  width: 140px;
   cursor: pointer;
-  width: 70%;
-  padding: 5px;
-  transition: all 0.2s ease-in-out;
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: all 0.3s ease-out;
 }
-
 .sidemenu.show {
   width: 200px;
   height: 200px;
@@ -156,9 +159,9 @@ span {
 span > * {
   vertical-align: -3px;
 }
-span > *.active {
+/* span > *.active {
   box-shadow: 3px 3px 7px #000000;
-}
+} */
 @media screen and (max-width: 500px) {
   .nav {
     position: fixed;
