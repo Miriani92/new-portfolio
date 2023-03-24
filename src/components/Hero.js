@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import styles from "./Hero.module.css";
 import { FiMapPin } from "react-icons/fi";
-import { animateOnScroll as changeBackgroundOnScroll } from "../utils/observerOnScroll";
 
 const Hero = () => {
   const divRef = useRef(null);
@@ -18,7 +17,6 @@ const Hero = () => {
       });
     };
     document.addEventListener("mousemove", moveDivs);
-    changeBackgroundOnScroll(wrapperRef.current, null, "var(--main-header)");
     return () => {
       document.removeEventListener("mousemove", moveDivs);
     };
