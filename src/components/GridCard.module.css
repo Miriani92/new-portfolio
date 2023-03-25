@@ -19,17 +19,19 @@
   color: var(--grey);
 }
 .animatecard {
-  animation: animatecard 0.5s ease-out;
-  animation-delay: var(--delay);
+  animation: animatecard 0.5s ease-out backwards;
 }
 @keyframes animatecard {
   0% {
-    transform: translateY(0%);
+    opacity: 0;
+    transform: translateY(5%);
   }
   50% {
-    transform: translateY(-10%);
+    opacity: 0.5;
+    transform: translateY(2.5%);
   }
   100% {
+    opacity: 1;
     transform: translateY(0%);
   }
 }

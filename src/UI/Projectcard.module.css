@@ -33,18 +33,22 @@
   margin-top: -50px;
 }
 .animatediscription {
-  animation: discription 0.5s ease-out;
+  animation: discription 0.5s ease-out forwards;
+  animation-delay: 0.5;
 }
 
 @keyframes discription {
   0% {
-    transform: translateX(5%);
+    opacity: 0;
+    transform: translateY(5%);
   }
-  75% {
-    transform: translateX(-2.5%);
+  50% {
+    opacity: 0.5;
+    transform: translateY(2.5%);
   }
   100% {
-    transform: translateX(0%);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .reversedtext {
@@ -83,18 +87,22 @@
   -moz-box-shadow: 1px 0px 21px 5px rgba(0, 0, 0, 0.72);
 }
 .animateimage {
-  animation: animateimage 0.5s ease-out;
+  animation: animateimage 0.5s ease-out forwards;
+  animation-delay: 0.5;
 }
 
 @keyframes animateimage {
   0% {
-    transform: translateX(-5%);
+    opacity: 0;
+    transform: translateY(5%);
   }
-  75% {
-    transform: translateX(2.5%);
+  50% {
+    opacity: 0.5;
+    transform: translateY(2.5%);
   }
   100% {
-    transform: translateX(0%);
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
 
