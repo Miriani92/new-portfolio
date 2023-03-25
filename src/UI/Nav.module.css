@@ -20,7 +20,7 @@
   cursor: pointer;
   background-color: var(--blue-menu);
   border: transparent;
-  animation: animateButton 0.5s linear;
+  animation: animateButton 0.5s ease-in;
   z-index: 5;
 }
 
@@ -152,16 +152,10 @@
 }
 span {
   margin-right: 10px;
-  height: 1.4rem;
+  height: 100%;
   font-size: 1.4rem;
-  line-height: 1.4rem;
+  line-height: 100%;
 }
-span > * {
-  vertical-align: -3px;
-}
-/* span > *.active {
-  box-shadow: 3px 3px 7px #000000;
-} */
 @media screen and (max-width: 500px) {
   .nav {
     position: fixed;

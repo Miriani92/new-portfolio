@@ -9,7 +9,7 @@ export const SideSocial = () => {
   const rightSideRef = useRef(null);
   useEffect(() => {
     const footerHeight = 130;
-    window.addEventListener("scroll", (event) => {
+    window.addEventListener("scroll", () => {
       const scrolled = window.scrollY;
       const pageScrollHeight = document.body.scrollHeight - window.innerHeight;
       if (pageScrollHeight - footerHeight <= scrolled) {
