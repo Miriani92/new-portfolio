@@ -33,6 +33,25 @@
   height: 200px;
   background-color: var(--slate);
 }
+.animateSideNav {
+  animation: sideNavAnimation 0.5s linear both;
+  animation-delay: 1s;
+}
+
+@keyframes sideNavAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .sociallinkswrapper {
   display: flex;
   justify-content: flex-end;

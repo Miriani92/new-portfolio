@@ -8,7 +8,11 @@ import { animateOnScroll } from "../utils/observerOnScroll";
 const Header = () => {
   const wrapperRef = useRef(null);
   useEffect(() => {
-    animateOnScroll(wrapperRef.current, null, "var(--main-header)");
+    animateOnScroll(
+      wrapperRef.current,
+      `${styles.header} ${styles.animateHeader}`,
+      "var(--main-header)"
+    );
   }, []);
   return (
     <header className={styles.header} id="header" ref={wrapperRef}>

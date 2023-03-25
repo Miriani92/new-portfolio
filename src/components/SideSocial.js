@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import styles from "./SideSocial.module.css";
 import { BsLinkedin, BsGithub, BsFacebook } from "react-icons/bs";
 import { socialLinks } from "../data/Links";
+import { animateOnScroll } from "../utils/observerOnScroll";
 
 export const SideSocial = () => {
   const [active, setActive] = useState(true);
@@ -18,6 +19,15 @@ export const SideSocial = () => {
         setActive(true);
       }
     });
+
+    animateOnScroll(
+      leftSideRef.current,
+      `${styles.leftsidewrapper} ${styles.animateSideNav}`
+    );
+    animateOnScroll(
+      rightSideRef.current,
+      `${styles.rightsidewrapper} ${styles.animateSideNav}`
+    );
   }, []);
   return (
     <>

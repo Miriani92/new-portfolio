@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import styles from "./Hero.module.css";
 import { FiMapPin } from "react-icons/fi";
+import { animateOnScroll } from "../utils/observerOnScroll";
 
 const Hero = () => {
   const divRef = useRef(null);
@@ -16,6 +17,10 @@ const Hero = () => {
         rotateValue += 0.4;
       });
     };
+    animateOnScroll(
+      wrapperRef.current,
+      `${styles.herowrapper} ${styles.animateHero}`
+    );
     document.addEventListener("mousemove", moveDivs);
     return () => {
       document.removeEventListener("mousemove", moveDivs);
