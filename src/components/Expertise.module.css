@@ -191,6 +191,9 @@
   }
 }
 @media screen and (max-width: 800px) {
+  .skillswrapper {
+    gap: 16px;
+  }
   .javascript > * {
     font-size: 50px;
   }
@@ -221,6 +224,10 @@
 }
 
 @media screen and (max-width: 576px) {
+  .skillswrapper {
+    gap: 8px;
+    margin-bottom: 4px;
+  }
   .about {
     width: 80%;
     margin-top: 0;

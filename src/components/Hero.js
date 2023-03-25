@@ -39,7 +39,7 @@ const Hero = () => {
           <div className={styles.seven}></div>
           <div className={styles.eight}></div>
         </article>
-        <h1>Hi, I'm Miriani</h1>
+        <h1 className={styles.title}>Hi, I'm Miriani</h1>
         <div className={styles.address}>
           <FiMapPin />
           <p>Tbilissi, Georgia</p>
