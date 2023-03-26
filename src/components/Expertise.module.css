@@ -25,6 +25,13 @@
   animation: animateexpertise 0.5s ease-out both;
   animation-delay: 0.5s;
 }
+.expertiseText,
+.stack {
+  line-height: 1.6;
+  word-spacing: 1px;
+  font-kerning: normal;
+  text-indent: 8px;
+}
 @keyframes animateexpertise {
   0% {
     opacity: 0;
@@ -45,7 +52,7 @@
   font-size: 18px;
   margin-top: 32px;
   max-width: 1200px;
-  height: 200px;
+  height: fit-content;
   border: 1px solid var(--light-slate);
   padding-bottom: 16px;
 }

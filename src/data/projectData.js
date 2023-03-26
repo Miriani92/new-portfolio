@@ -6,26 +6,26 @@ export const projects = [
   {
     name: "Ecommerce Website",
     description:
-      "A minimal eCommerce web-site, application has all functinality that those type of application needs,  it displays different products, products can be added or removed from the cart, shows which products are in stock and which are not.",
+      "It is a full-stack app that displays various products by category,It has price conversion functionality, as well as the ability to add products to the cart according to different variations (color, size).",
     image1: beauty,
-    technologies: "Technologies: React Css GraphQL Apollo",
+    technologies: "Technologies: React GraphQL Apollo",
     link: "https://github.com/Miriani92/store_app",
   },
   {
     name: "User Management System",
     description:
-      "A user management app, created to organize user data, it  has a user registration form through which a new user can be added,The application has a new user search functionality based on entered data, user can edit and delete account and change their status.",
+      "Another full-stack app, created to organize user data, it  has a user registration form through which a new user can be added,The application has a new user search functionality, user can edit and delete account and change their status.",
     image1: userBase,
-    technologies: "Technologies: Angular Css ExpressJs MongoDB",
+    technologies: "Technologies: Angular ExpressJs MongoDB",
     reverse: true,
     link: "https://github.com/Miriani92/user-base",
   },
   {
     name: "Typetrainer",
     description:
-      "I'm a big fan typing practice websites like 10 fast finger, mokeytype, and thought it would be great  to create my own typing app, typetrainer displays random generated words and after finishing typing it gives us result.",
+      "I'm a big fan of typing practice websites like 10 fast finger, monkeytype, and thought it would be great to create my own typing app, typetrainer displays random generated words and gives us statistics after the session is over.",
     image1: trainer,
-    technologies: "Technologies: React Css Redux",
+    technologies: "Technologies: React Redux",
     link: "https://github.com/Miriani92/type-trainer",
   },
 ];
@@ -68,7 +68,7 @@ export const moreProjects = [
   {
     name: "Web Scraper",
     description:
-      "I did not finished the project yet, this would be the app that scrapes the web (online store) permanently  and sends the message to the user when new product is added to the store.",
+      "App that scrapes the web (online store) permanently  and notifies us when a new product is uploaded at an acceptable price.The price is calculated by the average price of several similar products.",
     stack: ["Express", "Puppetier", "Cherrio"],
     link: "https://github.com/Miriani92/web-scraping",
   },

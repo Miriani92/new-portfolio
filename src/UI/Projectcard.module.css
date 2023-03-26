@@ -26,6 +26,9 @@
   flex-direction: row-reverse;
 }
 .descriptiontext {
+  line-height: 1.6;
+  word-spacing: 1px;
+  text-indent: 4px;
   color: rgb(211, 214, 218);
 }
 .discriptionWrapper {
@@ -75,7 +78,9 @@
   margin-right: -100px;
 }
 .technologies {
-  color: rgb(211, 214, 218);
+  color: rgb(218, 204, 204);
+  font-style: italic;
+  text-transform: capitalize;
 }
 .images {
   display: flex;

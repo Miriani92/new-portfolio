@@ -62,24 +62,26 @@ const Expertise = () => {
                   <div className={styles.third}></div>
                 </div>
               </div>
-              <p>
-                Hi again, I'm a full-stack developer based in Georgia, I build
-                dynamic, creative products from start to finish. I help
-                companies and startups to grow, always focused on developing
-                intuitive experiences that constantly change and improve based
-                on user metrics
+              <p className={styles.expertiseText}>
+                Hi again, I'm a full-stack developer based in Georgia, currently
+                working as a mobile developer at Train Effective. I'm
+                Well-organised, problem solver with more than 3 years of
+                experience making mobile and web applications, I build dynamic,
+                creative products from start to finish. I believe my experience,
+                passion and work ethic can give the additional values to the
+                company I will work for in the future.
               </p>
-              <p>
+              <p className={styles.stack}>
                 I use <strong>React</strong>, <strong>React Native</strong>,
                 <strong> Angular</strong> for client side and{" "}
-                <strong> ExpressJS</strong> , <strong>MongoDB</strong> for the
-                beckend, <strong>Material UI</strong> and <strong>Figma</strong>{" "}
-                for design.
+                <strong> ExpressJS</strong>, <strong>MongoDB</strong>,
+                <strong> Firebase</strong> for the beckend,{" "}
+                <strong>Material UI</strong> and <strong>Figma</strong> for
+                design.
               </p>
             </div>
           </div>
         </article>
-        {/* <div className={styles.aboutskills}></div> */}
       </section>
     </>
   );
