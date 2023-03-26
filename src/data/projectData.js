@@ -68,7 +68,7 @@ export const moreProjects = [
   {
     name: "Web Scraper",
     description:
-      "App that scrapes the web (online store) permanently  and notifies us when a new product is uploaded at an acceptable price.The price is calculated by the average price of several similar products.",
+      "App that scrapes the website permanently and notifies us when a new product is uploaded at an acceptable price.The price is calculated by the average price of several similar products.",
     stack: ["Express", "Puppetier", "Cherrio"],
     link: "https://github.com/Miriani92/web-scraping",
   },
