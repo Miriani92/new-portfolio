@@ -31,7 +31,11 @@ const GridCard = ({ name, description, stack, index, link }) => {
         </div>
         <div className={styles.stack}>
           {stack.map((technology, index) => {
-            return <p key={index}>{technology}</p>;
+            return (
+              <p key={index} className={styles.technology}>
+                {technology}
+              </p>
+            );
           })}
         </div>
       </div>

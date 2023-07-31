@@ -6,6 +6,9 @@
   padding: 24px;
   border-radius: var(--radius);
 }
+.technology {
+  font-style: italic;
+}
 .link {
   all: unset;
 }
