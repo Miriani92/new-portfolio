@@ -39,7 +39,7 @@ const Nav = () => {
             offset={-50}
             duration={700}
           >
-            <span>
+            <span className={styles.icon}>
               <AiOutlineHome />
             </span>
             {home.name}{" "}
@@ -54,7 +54,7 @@ const Nav = () => {
             offset={-50}
             duration={700}
           >
-            <span>
+            <span className={styles.icon}>
               <BsPerson />
             </span>
             {about.name}
@@ -69,7 +69,7 @@ const Nav = () => {
             offset={-50}
             duration={700}
           >
-            <span>
+            <span className={styles.icon}>
               <MdOutlineWorkOutline />
             </span>
             {projects.name}
@@ -84,7 +84,7 @@ const Nav = () => {
             offset={offsetValue}
             duration={700}
           >
-            <span>
+            <span className={styles.icon}>
               <AiOutlineMail />
             </span>
             {contact.name}
