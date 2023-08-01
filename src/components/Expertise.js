@@ -48,10 +48,10 @@ const Expertise = () => {
               </div>
 
               <div className={styles.material}>
-                <SiMaterialui />
+                <FaHtml5 />
               </div>
               <div className={styles.mongodb}>
-                <FaHtml5 />
+                <SiMaterialui />
               </div>
             </div>
             <div className={styles.about}>

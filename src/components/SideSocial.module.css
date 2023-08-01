@@ -77,3 +77,11 @@
   transform: rotate(90deg);
   color: var(--slate);
 }
+
+@media screen and (max-width: 576px) {
+  .leftline,
+  .rightline {
+    margin-top: 28px;
+    height: 120px;
+  }
+}
